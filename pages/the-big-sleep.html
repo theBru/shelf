@@ -1,0 +1,49 @@
+<section>
+    <h2>
+        The Big Sleep
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="raymond-chandler">Raymond Chandler</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1939
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Los Angeles PI Philip Marlowe is working for the Sternwood family. Old man Sternwood, crippled and wheelchair-bound,
+                is being given the squeeze by a blackmailer and he wants Marlowe to make the problem go away. But with Sternwood's
+                two wild, devil-may-care daughters prowling LA's seedy backstreets, Marlowe's got his work cut out - and
+                that's before he stumbles over the first corpse.</p>
+            <h3>Opening</h3>
+            <p>It was about eleven o'clock in the morning, mid October, with the Sun not shining and a look of hard wet rain
+                in the clearness of the foothills. I was wearing my powder-blue suit, with dark blue shirt, tie and display
+                handkerchief, black brogues, black wool socks with dark blue clocks on them. I was neat, clean, shaved and
+                sober, and I didn't care who knew it. I was everything the well-dressed private detective ought to be. I
+                was calling on four million dollars.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

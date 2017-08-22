@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Fatherland
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="robert-harris">Robert Harris</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1992
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p><i>Fatherland</i> is set in an alternative world where Hitler has won the Second World War. It is April 1964 and one week before Hitler's 75th birthday. Xavier March, a detective of the Kriminalpolizei, is called out to investigate the discovery of a dead body in a lake near Berlin's most prestigious suburb. As March discovers the identity of the body, he uncovers signs of a conspiracy that could go to the very top of the German Reich. And, with the Gestapo just one step behind, March, together with an American journalist, is caught up in a race to discover and reveal the truth - a truth that has already killed, a truth that could topple governments, a truth that will change history.</p>
+            <h3>Opening</h3>
+            <p>Thick cloud had pressed down on Berlin all night, and now it was lingering into what passed for the morning. On the city's western outskirts, plumes of rain drifted across the surface of Lake Havel, like smoke.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

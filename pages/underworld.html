@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Underworld
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="don-delillo">Don DeLillo</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1997
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>It's a vast and sprawling crowd that comes together to watch the Dodgers-Giants 1951 National League Final, and when Bobby Thomson hits the Shot Heard Round the World and wins the pennant race for the Giants, ripples are formed in the heavy undercurrent of time. Meanwhile, on the other side of the planet, another historic shot is fired: the USSR's second atomic detonation. And so <i>Underworld</i> follows the threads that link a symphonic cast of characters: men and women, together and apart, whose search for meaning, survival and connection will spill out over decades.</p>
+            <h3>Opening</h3>
+            <p>He speaks in your voice, American, and there's a shine in his eye that's halfway hopeful.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,17 @@
+<ol>
+    <li>
+        <a href="end-of-watch"><span class="book-title">End of Watch</span></a><br><span class="author">by <a href="stephen-king">Stephen King</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

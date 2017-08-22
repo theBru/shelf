@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        A Certain Smile
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="francoise-sagan">Françoise Sagan</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>1955
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Sagan's second novel tells the story of Dominique, a bored twenty year old law student at the Sorbonne in mid-1950's Paris, who embarks on a love affair with a middle-aged man.</p>
+            <h3>Opening</h3>
+            <p>We had been spending the afternoon in a cfe on Rue Sains-Jacques, an afternoon in springtime like any other. I was quietly rather bored: I was moving back and forth between the jukebox and the window while Bertrand discussed Spire's lecture. I remember that, at one moment, leaning against the jukebox, I had watched the record rise slowly and then place itself at an angle against the needle, almost tenderly, as it it were a cheek. And I don't know why but I was suffused with a fierce sense of happiness and with the overwhelming, almost palpable intuition that I was going to die one day and that there would no longer be this hand of mine on the chrome ledge, nor sun in my eyes.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

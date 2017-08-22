@@ -1,0 +1,17 @@
+<ol>
+    <li>
+        <a href="the-year-of-the-flood"><span class="book-title">The Year of the Flood</span></a><br><span class="author">by <a href="margaret-atwood">Margaret Atwood</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

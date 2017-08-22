@@ -1,0 +1,58 @@
+<section>
+    <h2>
+        The Buried Giant
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="kazuo-ishiguro">Kazuo Ishiguro</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2015
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>What would happen if the world were ending?
+            </p>
+            <p>"You've long set your heart against it, Axl, I know. But it's time now to think on it anew. There's a journey
+                we must go on, and no more delay..."</p>
+            <p><i>The Buried Giant</i> begins as a couple set off across a troubled land of mist and rain in the hope of finding
+                a son they have not seen in years.</p>
+            <p>Sometimes savage, often intensely moving, Kazuo Ishiguro's first novel in nearly a decade is about lost memories,
+                love, revenge, and war.</p>
+            <h3>Openning</h3>
+            <p>You would have searched a long time for the sort of winding lane or tranquil meadow for which England later became
+                celbrated. There were instead miles of desolate, uncultivated land; here and there rough-hewn paths over
+                craggy hills or bleak moorland. Most of the roads left by the Romans would by then have become broken or
+                overgrown, often fading into wilderness. Icy fogs hung over rivers and marshes, serving all too well the
+                ogres that were then still native to this land. The people who lived nearby - one wonders what desolation
+                led them to settle in such gloomy spots - might well have feared these creatures, whose panting breaths could
+                be heard long before their deformed figures emerged from the mist. But such monsters were not cause for astonishment.
+                People then would have regarded them as everyday hazards, and in those days there was so much else to worry
+                about. How to get food out of the hard ground; how not to run out of firewood; how to stop the sickness that
+                could kill a dozen pigs in a single day and produce green rashes on the cheeks of children.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

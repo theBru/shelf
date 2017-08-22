@@ -1,0 +1,41 @@
+<section>
+    <h2>
+        The Magic Mountain
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="thomas-mann">Thomas Mann</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>German
+                    </li>
+                    <li>
+                        <b>published</b><br>1924
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Hans Castorp is 'a perfectly ordinary, if engaging young man' when he goes to visit his cousin in an exclusive sanatorium in the Swiss Alps.What should have been a three week trip turns into a seven year stay. Hans falls in love and becomes intoxicated with the ideas he hears at the clinic - ideas which will strain and crack apart in a world on the verge of the First World War.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

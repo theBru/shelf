@@ -1,0 +1,39 @@
+<section>
+    <h2>
+        Italo Calvino
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>15 October 1923 (Cuba)
+                    </li>
+                    <li>
+                        <b>died</b><br>19 September 1985
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="invisible-cities">Invisible Cities</a> (1972)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

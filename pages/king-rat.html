@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        King Rat
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="china-mieville">China Miêville</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1998
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Something is stirring in London's dark, stamping out its territory in brickdust and blood. Something has murdered Saul Garamond's father, and left Saul to pay for the crime.</p>
+            <p>But a shadow from the urban waste breaks into Saul's prison cell and leads him to freedom. A shadow called King Rat, who reveals Saul's royal heritage, a heritage that opens a new world to Saul, the world below London's streets--a heritage that also drags Saul into King Rat's plan for revenge against his ancient enemy,. With drum 'n' bass pounding the backstreets, Saul must confront the forces that would use him, the forces that would destroy him, and the forces that shape his own bizarre identity.</p>
+            <h3>Opening</h3>
+            <p>I can squeeze between buildings through spaces you can't even see. I can walk behind you so close my breath raises gooseflesh on your neck and you won't hear me. I can hear the muscles in your eyes contract when your pupils dilate. I can feed off your filth and live in your house and sleep under your bed and you will never know unless I want you to.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

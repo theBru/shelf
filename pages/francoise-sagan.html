@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Fançoise Sagan
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>21 June 1935 (France)
+                    </li>
+                    <li>
+                        <b>died</b><br>24 September 2004
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="bonjour-tristesse">Bonjour Tristesse</a> (1954)</li>
+                <li><a href="a-certain-smile">A Certain Smile</a> (1955)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

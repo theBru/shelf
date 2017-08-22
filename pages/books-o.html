@@ -1,0 +1,17 @@
+<ol>
+    <li>
+        <a href="on-anarchism"><span class="book-title">On Anarchism</span></a><br><span class="author">by <a href="noam-chomsky">Noam Chomsky</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

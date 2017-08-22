@@ -1,0 +1,36 @@
+<section>
+    <h2>
+        Stephen Baxter
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>13 November 1957 (England)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="the-long-war">The Long War [The Long Earth, #2]</a> (2013) (with <a href="terry-pratchett">Terry Pratchett</a>)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

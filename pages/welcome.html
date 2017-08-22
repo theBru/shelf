@@ -1,0 +1,19 @@
+<h2>Hello world</h2>
+<p>My name is Gurur and this is my little site about books. There is an entry for every book I've read, with some blurb about
+    the things I found out about it on the interwebz. This will be a an ongoing WIP, since I've never really fully committed
+    to taking a note of the books I've read (occasional bursts of GoodReads entries aside).</p>
+<p>Tl;dr - this site will probably never be completed.</p>
+<p>On the side panel to the right of this text you will see an alphabetical ordering of books. Should you want to browse by
+    authors, you can toggle this in the navigation bar.</p>
+<p>For those interested, this is a CMS-free site that uses jQuery. No db, so it's all manual. Why? No reason other than I didn't
+    want to learn another static site generator and trawl through its documentation to do the simplest of things.</p>
+<p>Anyway, enjoy browsing.</p>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+</script>

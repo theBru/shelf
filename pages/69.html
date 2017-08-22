@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        69
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ryu-murakami">Ryu Murakami</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Japanese
+                    </li>
+                    <li>
+                        <b>published</b><br>1987
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>It's summer of 1969, and Kensuke Yazaki is seventeen and interested in evrything: the Rolling Stones, Rimbaud, the Velvet Underground, French New Wave, Jimi Hendrix, political protest and Janis Joplin, all of which is happening in a long way away. But Kensuke and his friends are going to bring 1969 to their provincial Japanese city, start a dissident movement, barricade their school, make a film, stage a festival. Not for the sake of art or politics, for a much better reason, for the only real reason. To impress girls.</p>
+            <p>Murakami's uncharacteristically sweet, semi-autobiographical account of an exciting time to be an exciting age, <i>69</i> is funny and affectionate, brimful of passion, and as irrepressible as the brilliant brazen smartass Kensuke himself.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

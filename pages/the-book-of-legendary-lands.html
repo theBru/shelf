@@ -1,0 +1,55 @@
+<section>
+    <h2>
+        The Book of Legendary Lands
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="umberto-eco">Umberto Eco</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Italian
+                    </li>
+                    <li>
+                        <b>published</b><br>2013
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>A fascinating illustrated tour of fabled places in literature and folklore that have awed, tourbled, and eluded
+                us through the ages.</p>
+            <p>From the epic poets of antiquity to contemporary writers of science fiction, from the authors of the Holy Scriptures
+                to modern raconteurs of fairy tales, writers and storytellers through the ages have invented imaginary and
+                mythical lands, projecting onto them all of our human dreams, ideals, and fears.</p>
+            <p>In the tradition of his acclaimed <i>History of Beauty</i>, <i>On Ugliness</i>, and <i>The Infinity of Lists</i>,
+                renowned writer and cultural critic Umberto Eco leads us on a beautifully illustrated journey through these
+                lands of myth and invention, showing us their inhabitants, the passions that rule them, their heroes and
+                antangonists, and, above all, the importance they hold for us. He explores this human urge to create such
+                places, the utopias and dystopias where our imagination can confront things that are too incredible or challenging
+                for our limited real world.</p>
+            <p>Illuminated with more than 300 coloured images, <i>The Book of Legendary Lands</i> is both erudite and thoroughly
+                enjoyable, bringing together disparate elements of our shared literary legacy in a way only Umberto Eco can.
+                Homer's poems and other ancient and medieval texts are presented side by side with <i>Gulliver's Travels</i>                and <i>Alice in Wonderland</i>; Tolkien shares space with Marco Polo's <i>Books of the Marvel's of the World</i>;
+                films complement poems, and comics inform novels. Together these stories have influenced the sensibilities
+                and worldview of all of us.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

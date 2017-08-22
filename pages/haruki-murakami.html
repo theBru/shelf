@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Haruki Murakami
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>12 January 1949 (Japan)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="hear-the-wind-sing">Hear the Wind Sing</a> (1973)</li>
+                <li><a href="pinball-1973">Pinball, 1973</a> (1973)</li>
+                <li><a href="norwegian-wood">Norwegian Wood</a> (1987)</li>
+                <li><a href="sputnik-sweetheart">Sputnik Sweetheart</a> (1999)</li>
+                <li><a href="blind-willow-sleeping-woman">Blind Willow, Sleeping Woman</a> (2006)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

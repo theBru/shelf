@@ -1,0 +1,49 @@
+<section>
+    <h2>
+        Black Mass: Apocalyptic Religion and the Death of Utopia
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="john-gray">John Gray</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2007
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Our conventional view of history and human progress is wrong. It is founded on pernicious myth of an achievable
+                utopia that in the last century alone caused the murder of tens of millions. In <i>Black Mass</i> John Gray
+                tears down the religious, political and secular beliefs that we insist are fundamental to the human project
+                and shows us how a misplaced faith in our ability to improve the world has actually made it far worse.</p>
+            <h3>Opening</h3>
+            <p>Modern politics is a chapter in the history of religion. The greatest of the revolutionary upheavals that have
+                shaped so much of the history of the past two centuries were episodes in the history of faith - moments in
+                the long dissolution of Christianity and the rise of modern political religion. The world in which we find
+                ourselves at the start of the new millenium is littered with the debris of utopian projects, which though
+                they were framed in secular terms that denied the truth of religion were in fact vehicles for religious myths.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

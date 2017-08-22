@@ -1,0 +1,27 @@
+<ol>
+    <li>
+         <a href="religion-for-atheists"><span class="book-title">Religion for Atheists</span></a><br>
+         <span class="author">by <a href="alain-de-botton">Alain de Botton</a></span>
+    </li>
+    <li>
+        <a href="revelation-space"><span class="book-title">Revelation Space</span></a><br>
+        <span class="author">by <a href="alastair-reynolds">Alastair Reynolds</a></span>
+    </li>
+    <li>
+        <a href="the-road-to-little-dribbling"><span class="book-title">The Road to Little Dribbling</span></a><br>
+        <span
+            class="author">by <a href="bill-bryson">Bill Bryson</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

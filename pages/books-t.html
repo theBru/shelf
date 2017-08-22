@@ -1,0 +1,23 @@
+<ol>
+    <li>
+        <a href="this-census-taker"><span class="book-title">This Census-Taker</span></a><br><span class="author">by <a href="china-mieville">China Miéville</a></span>
+    </li>
+    <li>
+        <a href="the-tiny-wife"><span class="book-title">The Tiny Wife</span></a><br><span class="author">by <a href="andrew-kaufman">Andrew Kaufman</a></span>
+    </li>
+    <li>
+        <a href="tropic-of-cancer"><span class="book-title">Tropic of Cancer</span></a><br><span class="author">by <a href="henry-miller">Henry Miller</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

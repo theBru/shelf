@@ -1,0 +1,29 @@
+<ol>
+    <li>
+        <a href="the-scar"><span class="book-title">The Scar</span></a><br><span class="author">by <a href="china-mieville">China Miéville</a></span>
+    </li>
+    <li>
+        <a href="seveneves"><span class="book-title">Seveneves</span></a><br><span class="author">by <a href="neal-stephenson">Neal Stephenson</a></span>
+    </li>
+    <li>
+        <a href="sputnik-sweetheart"><span class="book-title">Sputnik Sweetheart</span></a><br><span class="author">by <a href="haruki-murakami">Haruki Murakami</a></span>
+    </li>
+    <li>
+        <a href="submission"><span class="book-title">Submission</span></a><br><span class="author">by <a href="michel-houellebecq">Michel Houellebecq</a></span>
+    </li>
+    <li>
+        <a href="sweet-tooth"><span class="book-title">Sweet Tooth</span></a><br><span class="author">by <a href="ian-mcewan">Ian McEwan</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

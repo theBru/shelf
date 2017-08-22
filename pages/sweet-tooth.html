@@ -1,0 +1,41 @@
+<section>
+    <h2>
+        Sweet Tooth
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ian-mcewan">Ian McEwan</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2012
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The year is 1972. The Cold War is far from over. Britain is being torn apart by industrial unrest and terrorism. Serena Frome, in her final year at Cambridge, is being groomed for MI5.</p>
+            <p>Serena is sent on a secret mission – Operation Sweet Tooth – which brings her into the world of Tom Haley, a promising young writer. First she loves his stories, then she begins to love the man. Can she maintain the fiction of her undercover life? And who is inventing whom? To answer these questions, Serena must abandon the first rule of espionage – trust no one.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The City &amp; the City
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="china-mieville">China Miéville</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2009
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>When the body of a murdered woman is found in the extraordinary, decaying city of Beszel, somewhere at the edge of Europe, it looks like a routine case for Inspector Tyador Borlú of the Extreme Crime Squad. But as he probes, the evidence begins to point to conspiracies far stranger, and more deadly, than anything he could have imagined. Soon his work puts him and those he cares for in danger. Borlú must travel to the only metropolis on Earth as strange as his own, across a border like no other.</p>
+            <h3>Opening</h3>
+            <p>I could not see the street or much of the estate. We were enclosed by dirt-coloured blocks, from windows out of which leaned vested men and women with morning hair and mugs of drink, eating breakfast and watching us. This open ground between the buildings had once been scuplted. It pitched like a golf course - a child's mimicking of geography. Maybe they had been going to wood it and put in a pond. There was a copse but the saplings were dead.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

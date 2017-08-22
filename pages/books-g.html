@@ -1,0 +1,23 @@
+<ol>
+    <li>
+        <a href="gardens-of-the-moon"><span class="book-title">Gardens of the Moon</span></a><br><span class="author">by <a href="steven-erikson">Steven Erikson</a></span>
+    </li>
+    <li>
+        <a href="the-grace-of-kings"><span class="book-title">The Grace of Kings</span></a><br><span class="author">by <a href="ken-liu">Ken Liu</a></span>
+    </li>
+    <li>
+        <a href="grimm-tales-for-young-and-old"><span class="book-title">Grimm Tales for Young and Old</span></a><br><span class="author">by <a href="philip-pullman">Philip Pullman</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,29 @@
+<ol>
+    <li>
+        <a href="the-magic-mountain"><span class="book-title">The Magic Mountain</span></a><br><span class="author">by <a href="thomas-mann">Thomas Mann</a></span>
+    </li>
+    <li>
+        <a href="man-plus"><span class="book-title">Man Plus</span></a><br><span class="author">by <a href="frederik-pohl">Frederik Pohl</a></span>
+    </li>
+    <li>
+        <a href="metro-2033"><span class="book-title">Metro 2033</span></a><br><span class="author">by <a href="dmitry-glukhovsky">Dmitry Glukhovsky</a></span>
+    </li>
+    <li>
+        <a href="the-modern-web"><span class="book-title">The Modern Web</span></a><br><span class="author">by <a href="peter-gasston">Peter Gasston</a></span>
+    </li>
+    <li>
+        <a href="the-moral-arc"><span class="book-title">The Moral Arc</span></a><br><span class="author">by <a href="michael-shermer">Michael Shermer</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

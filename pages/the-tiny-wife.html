@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Tiny Wife
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="andrew-kaufman">Andrew Kaufman</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2010
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>A robber charges into a bank with a loaded gun, but instead of taking any money he steals an item of sentimental value from each person. Once he has made his escape, strange things start to happen to the victims.</p>
+            <p>A tattoo comes to life, a husband turns into a snowman, a baby starts to shit money. And Stacey Hinterland discovers that she’s shrinking, a little every day, and there is seemingly nothing that she or her husband can do to reverse the process.</p>
+            <h3>Opening</h3>
+            <p>The robbery was not without consequences. The consequecnes were the point of the robbery. It was never about the money. The thief didn't ask for any. That it happened in a bank was incidental. It could have just as easily happened in a train station or a high school or the Musée d'Orsay. It has in the past and it will in the future, and shortly after 3 p.m. on Wednesday 21st February it happened inside Branch #117 of the British Bank of North America.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

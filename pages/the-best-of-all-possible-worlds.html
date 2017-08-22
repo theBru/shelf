@@ -1,0 +1,54 @@
+<section>
+    <h2>
+        The Best of All Possible Worlds
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="karen-lord">Karen Lord</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2013
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>A proud and reserved alien society finds its homeland destroyed in an unprovoked act of aggression, and the survivors
+                have no choice but to reach out to the indigenous humanoids of their adopted world, to whom they are distantly
+                related. They wish to preserve their cherished way of life but come to discover that in order to preserve
+                their culture, they may have to change it forever.</p>
+            <p>Now a man and a woman from these two clashing societies must work together to save this vanishing race—and end
+                up uncovering ancient mysteries with far-reaching ramifications. As their mission hangs in the balance, this
+                unlikely team—one cool and cerebral, the other fiery and impulsive—just may find in each other their own
+                destinies . . . and a force that transcends all.</p>
+            <h3>Opening</h3>
+            <p>He always set aside twelve days of his annual retreat to finish up reports and studies, and that left twelve
+                more for everything else. In earlier times, he had foolishly tried retreats within comm-reach of his workplace,
+                and that was not at all helpful. There would always be some crisis, something for which his help would be
+                required. As his salary and sense increased, he took his retreats further and further away, until at last
+                he found himself going off-planet to distant temples where the rule of silence and solitude could not be
+                broken by convenient technologies.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

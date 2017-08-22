@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Thanks, Eric! */
+/* LAYOUT */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  height: 5vh;
+  width: 100vw;
+  background-color: #25282e;
+  line-height: 5vh;
+}
+header h1 {
+  padding-left: 2.5vw;
+}
+
+nav li {
+  display: inline;
+  margin-left: 1.25vw;
+}
+nav li:last-child {
+  margin-right: 2.5vw;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+article {
+  margin-top: 2.5vh;
+  width: 75%;
+  padding: 0 2.5vw;
+  height: 95vh;
+}
+article .meta-card ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-start;
+  align-content: flex-start;
+}
+article .meta-card ul li {
+  margin-right: 7.5vw;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+article .meta-card ul li b {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #a6abb7;
+}
+article .author-section li {
+  margin-bottom: 1.25vh;
+}
+
+aside {
+  padding: 2.5vh 2.5vw;
+  width: 25%;
+  height: 100%;
+  /*min-height: 95vh;*/
+}
+aside li {
+  margin-bottom: 1.6666666667vh;
+}
+aside #book-list {
+  margin-top: 2.5vh;
+}
+aside #alphabet-navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+aside #alphabet-navigation li {
+  width: 2em;
+  line-height: 2em;
+  height: 1em;
+}
+
+/* TYPOGRAPHY */
+body {
+  color: #2A2D34;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5em;
+}
+h1 a {
+  color: #d6d8db;
+}
+h1 a:hover {
+  color: #009DDC;
+  border-bottom: none;
+}
+
+nav a {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  color: white;
+}
+nav a:hover {
+  color: #009DDC;
+}
+
+article h2 {
+  font-family: "Amatic SC", cursive;
+  font-size: 4em;
+  margin-bottom: 2.5vh;
+}
+article h2 span {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 0.5em;
+  letter-spacing: 0.05em;
+}
+article h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5em;
+  margin: 5vh 0 2.5vh 0;
+}
+article p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  margin-bottom: 2.5vh;
+  width: 75%;
+}
+article li {
+  font-size: 1.4em;
+}
+article a:hover {
+  border-bottom: 1px solid #009DDC;
+}
+
+aside a {
+  color: #009DDC;
+}
+aside a:hover {
+  border-bottom: 1px solid #009DDC;
+}
+aside li {
+  color: #2A2D34;
+}
+aside .book-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.8em;
+  line-height: 1.5em;
+}
+aside .author {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+aside #alphabet-navigation {
+  position: relative;
+  left: -0.5em;
+}
+aside #alphabet-navigation li a {
+  display: block;
+  text-align: center;
+}
+aside #alphabet-navigation li a:hover {
+  border: none;
+}
+aside #alphabet-navigation li a.selected {
+  background-color: #009DDC;
+  color: white;
+}
+
+a {
+  color: #009DDC;
+  text-decoration: none;
+}
+
+/* Images */
+.book-cover img {
+  width: 60%;
+  height: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

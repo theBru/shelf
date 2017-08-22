@@ -1,0 +1,52 @@
+<section>
+    <h2>
+        Metro 2033 [Metro, #1]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="dmitry-glukhovsky">Dmitry Glukhovsky</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Russian
+                    </li>
+                    <li>
+                        <b>published</b><br>2002
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The civilization most northern outpost, a lonely metro station, attacked by mysterious creatures that somehow
+                have awoken in the recent war. The world lies in ruins, the surface is contaminated, and a prey to the sun's
+                deadly rays. One last human remnant have sought protection in the Metro, the world's largest nuclear bomb
+                secure bunker, where stations have been transformed into small city states with their own ideologies and
+                governments.
+            </p>
+            <p>Everywhere there is a constant struggle for living space, water filters, electric heaters and fungal cultures,
+                all while darkness and terror reigns in the tunnels.</p>
+            <p>A young man is forced out on a dangerous journey through the subterranean maze of tunnels, shafts and sidings,
+                where nobody knows what to expect around the next corner.</p>
+
+            <h3>Opening</h3>
+            <p>"Who's there? Artyom - go have a look."</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

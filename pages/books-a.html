@@ -1,0 +1,23 @@
+<ol>
+    <li>
+        <a href="absolution-gap"><span class="book-title">Absolution Gap</span></a><br><span class="author">by <a href="alastair-reynolds">Alastair Reynolds</a></span>
+    </li>
+    <li>
+        <a href="the-alloy-of-law"><span class="book-title">The Alloy of Law</span></a><br><span class="author">by <a href="brandon-sanderson">Brandon Sanderson</a></span>
+    </li>
+    <li>
+        <a href="aurora"><span class="book-title">Aurora</span></a><br><span class="author">by <a href="kim-stanley-robinson">Kim Stanley Robinson</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

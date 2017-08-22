@@ -1,0 +1,60 @@
+<section>
+    <h2>
+        Purity
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jonathan-franzen">Jonathan Franzen</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2015
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Purity Tyler, known to all as Pip, is an outspoken, forthright young woman struggling to make a life for herself.
+                She sleeps in an rickety commune in Oakland. She's in love with an unavailable older man and is saddled with
+                staggering college debt. She has a crazy mother and doesn't know who her father is. A chance encounter leads
+                her to an internship in South America with the world-famous Sunlight Project, which uses the internet to
+                expose government and corporate fraud and malfeasance. TSP is the brainchild of Andreas Wolf, a charismatic
+                genius who grew up privileged but disaffected in the German Democratic Republic. Forced to run TSP in Bolivia
+                because of the hostility of European nations whose misdeeds he has exposed, Andreas is drawn to Pip for reasons
+                she doesn't understand. Like numerous women before her, she becomes obsessed with Andreas, and they have
+                an intense, unsettling relationship. Eventually, he finds her work at an online magazine in Denver with Tom
+                Aberant, who, with his life partner, Leila Helou, uses old-fashioned reporting to achieve some of the same
+                results that TSP seems to pull out of thin air.</p>
+            <p> That's the top story. What lies underneath is a wild tale of hidden identities, secret wealth, neurotic fidelity,
+                sociopathy and murder. The truth of Pip's parentage lies at the center of this maelstrom, but before it is
+                resolved Franzen takes us from the rain-drenched forests of northern California, to paranoid East Berlin
+                before the fall of the Wall, to the paradisiacal mountain valleys of Bolivia, exposing us to the vagaries
+                of radical politics, the problematic seductions of the internet, and the no-holds-barred war between the
+                sexes.
+            </p>
+            <h3>Opening</h3>
+            <p>"Oh pussycat, I'm so glad to hear your voice," the girl's mother said on the telephone. "My body is betraying
+                me again. Sometimes I think my life is nothing but one long process of bodily betrayal."</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

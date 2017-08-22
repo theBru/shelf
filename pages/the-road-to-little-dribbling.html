@@ -1,0 +1,49 @@
+<section>
+    <h2>
+        The Road to Little Dribbling: Adventures of an American in Britain
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="bill-bryson">Bill Bryson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2015
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>In 1995 Bill Bryson got into his car and took a weeks-long farewell motoring trip about England before moving
+                his family back to the United States. The book about that trip, <i>Notes from a Small Island</i>, is uproarious
+                and endlessly endearing, one of the most acute and affectionate portrayals of England in all its glorious
+                eccentricity ever written. Two decades later, he set out again to rediscover that country, and the result
+                is <i>The Road to Little Dribbling</i>. Nothing is funnier than Bill Bryson on the road—prepare for the total
+                joy and multiple episodes of unseemly laughter.</p>
+            <h3>Opening</h3>
+            <p>One of the things that happens when you get older is that you discover lotas of new ways to hurt yourself. Recently,
+                in France, I was hit square on the head by an automatic parking barrier, something I don't think I could
+                have managed in my younger, more alert years.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

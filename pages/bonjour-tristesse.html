@@ -1,0 +1,48 @@
+<section>
+    <h2>
+        Bonjour Tristesse
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="francoise-sagan">Françoise Sagan</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>1954
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p><i>Bonjour Tristesse</i> tells the story of Cécile, who leads a carefree life with her widowed father and his
+                young mistress until, one hot summer on the Riviera, he decides to remarry - with devastating consequences.</p>
+            <h3>Opening</h3>
+            <p>This strange new feeling of mine, obsessing me by its sweet languor, is such that I am reluctant to dignify it
+                with the fine, solemn name of 'sadness'. It is a feeling so self-indulgent and complete in itself that I
+                am almost ashamed of it, whereas I had always looked upon sadness as being a worthy emotion. Before, I did
+                not know what sadness was, though I knew wat it was to be languorous, to have regrets and, more rarely, to
+                feel remorse. Today it is as if I am enfolded in some silken thing, soft and enervating that sets me apart
+                from others.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

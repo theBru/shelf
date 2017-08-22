@@ -1,0 +1,23 @@
+<ol>
+    <li>
+        <a href="a-certain-smile"><span class="book-title">A Certain Smile</span></a><br><span class="author">by <a href="francoise-sagan">Françoise Sagan</a></span>
+    </li>
+    <li>
+        <a href="the-city-and-the-city"><span class="book-title">The city &amp; the City</span></a><br><span class="author">by <a href="china-mieville">China Miéville</a></span>
+    </li>
+    <li>
+        <a href="cobweb"><span class="book-title">Cobweb</span></a><br><span class="author">by <a href="neal-stephenson">Neal Stephenson</a> &amp; <a href="frederick-george">Frederick George</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

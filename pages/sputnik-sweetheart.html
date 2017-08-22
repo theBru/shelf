@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        Sputnik Sweetheart
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="haruki-murakami">Haruki Murakami</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Japanese
+                    </li>
+                    <li>
+                        <b>published</b><br>1999
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Sumire is in love with a woman seventeen years her senior. But whereas Miu is glamorous and successful, Sumire is an aspiring writer who dresses in an oversized second-hand coat and heavy boots like a character in a Kerouac novel.</p>
+            <p>Sumire spends hours on the phone talking to her best friend K about the big questions in life: what is sexual desire, and should she ever tell Miu how she feels for her? Meanwhile K wonders whether he should confess his own unrequited love for Sumire.</p>
+            <p>Then, a desperate Miu calls from a small Greek island: Sumire has mysteriously vanished...</p>
+            <h3>Opening</h3>
+            <p>In the spring of her twenty-second year, Sumire fell in love for the first time in her life. An intense love, a veritable tornado sweeping across the plains - flattening everything in its path, tossing things up in the air, ripping them to shreds, crushing them to bits. The tornado's intensity doesn't abate for a second as it blasts across the ocean, laying waste to Angkor Wat, incinerating the Indian jungle, tigers and everything, transforming itself into a Persian desert sandstorm, burying an exotic fortress city under a sea of sand. In short, a love of truly monumental proportions. The person she fell in love with happened to be 17 years older than Sumire. And was married. And, I should add, was a woman. This is where it all began, and where it all ended. Almost.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

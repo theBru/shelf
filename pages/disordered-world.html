@@ -1,0 +1,53 @@
+<section>
+    <h2>
+        Disordered World: A Vision for the Post-9/11 World
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="amin-maalouf">Amin Maalouf</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>2012
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>In this brilliantl exploration of the post-9/11 world, the internationally celebrated Lebanese novelist and intellectual
+                Amin Maalouf sets out to understand the urgent challenges the world faces today. Instead of seeing the current
+                disorder of the post-9/11 world as a 'clash of civilisations' Maalouf sees it as the 'exhaustion of two civilisations',
+                a period in which humanity has reached its threshold of 'moral incompetence'. <i>Disordered World</i> is
+                a plea by one of the major writers of our time for intelligence, tolerance and a sense of urgency on order
+                that we develop a mature vision of our patrimony, our beliefs, our differences and the future of the planet
+                which is our common home.</p>
+            <h3>Opening</h3>
+            <p>When the Berlin Wall fell, a hopeful breeze blew across the world. The end of the stand-off between the West
+                and the Soviet Union removed the threat of a nuclear cataclysm which had hung over our heads for forty years.
+                We believed that democracy would now gradually spread until it encompassed the whole planet; the barriers
+                between countries would fall; the movement of people, goods, images and ideas would develop unimpeded, ushering
+                in an era of progress and prosperity. On each of these fronts there were some remarkable advances to begin
+                with. But the further we went, the more disoriented we became.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

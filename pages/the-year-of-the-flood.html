@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Year of the Flood
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="margaret-atwood">Margaret Atwood</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2009
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The sun brightens in the east, reddening the blue-grey haze that marks the distant ocean. The vultures roosting on the hydro poles fan out their wings to dry them. the air smells faintly of burning. The waterless flood - a manmade plague - has ended the world.</p>
+            <p>But two young women have survived: Ren, a young dancer trapped where she worked, in an upmarket sex club (the cleanest dirty girls in town); and Toby, who watches and waits from her rooftop garden. Is anyone else out there?</p>
+            <h3>Opening</h3>
+            <p>In the early morning Toby climbs up to the rooftop to watch the sunrise. She uses a mop handle for balance: the elevator stopped working some time ago and the back stairs are slick with damp, and if she slids and topples there won't be anyone to pick her up.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

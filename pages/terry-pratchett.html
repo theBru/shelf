@@ -1,0 +1,39 @@
+<section>
+    <h2>
+        Terry Pratchett
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>28 April 1948 (England)
+                    </li>
+                    <li>
+                        <b>died</b><br>12 March 2015
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="the-long-war">The Long War [The Long Earth, #2]</a> (2013) (with <a href="stephen-baxter">Stephen Baxter</a>)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

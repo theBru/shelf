@@ -1,0 +1,37 @@
+<section>
+    <h2>
+        Alastair Reynolds
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>13 March 1966 (Wales)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="revelation-space">Revelation Space [Revelation Space, #1]</a> (2000)</li>
+                <li><a href="absolution-gap">Absolution Gap [Revelation Space, #3</a> (2003)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

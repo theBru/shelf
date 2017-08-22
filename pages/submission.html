@@ -1,0 +1,59 @@
+<section>
+    <h2>
+        Submission
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="michel-houellebecq">Michel Houellebecq</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>2015
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>In a near-future France, François, a middle-aged academic, is watching his life slowly dwindle to nothing. His
+                sex drive is diminished, his parents are dead, and his lifelong obsession – the ideas and works of the nineteenth-century
+                novelist Joris-Karl Huysmans – has led him nowhere. In a late-capitalist society where consumerism has become
+                the new religion, François is spiritually barren, but seeking to fill the vacuum of his existence.</p>
+            <p>And he is not alone. As the 2022 Presidential election approaches, two candidates emerge as favourites: Marine
+                Le Pen of the Front National, and Muhammed Ben Abbes of the nascent Muslim Fraternity. Forming a controversial
+                alliance with the mainstream parties, Ben Abbes sweeps to power, and overnight the country is transformed.
+                Islamic law comes into force: women are veiled, polygamy is encouraged and, for François, life is set on
+                a new course.</p>
+            <h3>Opening</h3>
+            <p>Through all the years of my sad youth Huysmans remained a companion, a faithful friend; never once did I doubt
+                him, never once was I tempted to drop him or take up another subject; then, one afternoon in June 2007, after
+                waiting and putting it off as long as I could, even slightly longer than it was allowed, I defended ny dissertation,
+                'Joris-Karl Huysmans: Out of the Tunnel', before the jury of the University of Paris IV-Sorbonne. The next
+                morning (or maybe that evening, I don't remember: I spent the night of my defence alone and very drunk) I
+                realised that part of my life, probably the best part, was behind me.</p>
+            <h3>Opening</h3>
+            <p>A boy ran down a hill path screaming. The boy was I. He held his hands up and out in front of him as if he'd
+                dipped them in paint and was coming to make a picture, to press them down to paper, but all there was on
+                him was dirt. There was no blood on his palms.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

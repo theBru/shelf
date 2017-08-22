@@ -1,0 +1,47 @@
+<section>
+    <h2>
+        A History of the Arab Peoples
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="albert-hourani">Albert Hourani</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1991
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>In a work of profound and lasting importance, Albert Hourani tells the definitive history of thr Arab peoples
+                from the seventh century, when the new religion of Islam began to spread from the Arabian Peninsula westwards,
+                to the present day.</p>
+            <h3>Opening</h3>
+            <p>In the year 1382 an Arab Muslim scholar who served the ruler of Tunis asked his permission to make the pilgrimage
+                to Mecca, and having received it took ship for Alexandria in Egypt. In his fiftieth year he was leaving,
+                as it turned out for ever, the countries of the Maghrib in which he and his ancestors had played an important
+                and varied part.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

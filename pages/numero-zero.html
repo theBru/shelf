@@ -1,0 +1,48 @@
+<section>
+    <h2>
+        Numero Zero
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="umberto-eco">Umberto Eco</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Italian
+                    </li>
+                    <li>
+                        <b>published</b><br>2015
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>1945, Lake Como. Mussolini and his mistress are captured and shot by local partisans. The precise circumstances
+                of Il Duce's death remain shrouded in confusion and controversy.</p>
+            <p>1992, Milan. Colonna takes a job at a fledgling newspaper financed by a powerful media magnate. There he learns
+                the paranoid theories of Braggadocio, who is convinced that Mussolini's corpse was a body-double and part
+                of a wider fascist plot.</p>
+            <p>Colonna is sceptical. But when a body is found, stabbed to death in a back alley, and the paper is shut down,
+                even he is jolted out of his complacency.</p>
+            <h3>Opening</h3>
+            <p>No water in the tap this morning.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

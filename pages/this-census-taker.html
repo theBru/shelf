@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        This Census-Taker
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="china-mieville">China Miéville</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2016
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>In a remote house on a hilltop, a lonely boy witnesses a traumatic event. He tries - and fails - to flee. Left
+                alone with his increasingly deranged parent, he dreams of safety, of joining the other children in the town
+                below, of escape.</p>
+            <p>When at last a stranger knocks at his door, the boy senses that his days of isolation might be over. But by what
+                authority does this man keep the meticulous records he carries? What is the purpose behind his questions?
+                Is he a friend? Enemy? Or something else altogether?</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

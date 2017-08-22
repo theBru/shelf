@@ -1,0 +1,39 @@
+<section>
+    <h2>
+        Brandon Sanderson
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>19 December 1975 (USA)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="the-hero-of-ages">The Hero of Ages [Mistborn, #3]</a> (2008)</li>
+                <li><a href="the-way-of-kings">The Way of the Kings [The Stormlight Archive, #1]</a> (2010)</li>
+                <li><a href="the-alloy-of-law">The Alloy of Law [Mistborn - Alloy Era, #1]</a> (2011)</li>
+                <li><a href="words-of-radiance">Words of Radiance [The Stormlight Archive, #2]</a> (2014)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

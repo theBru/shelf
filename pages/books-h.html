@@ -1,0 +1,24 @@
+<ol>
+    <li>
+        <a href="hear-the-wind-sing"><span class="book-title">Hear the Wind Sing</span></a><br><span class="author">by <a href="haruki-murakami">Haruki Murkami</a></span>
+    </li>
+    <li>
+        <a href="the-hero-of-ages"><span class="book-title">The Hero of Ages</span></a><br><span class="author">by <a href="brandon-sanderson">Brandon Sanderson</a></span>
+    </li>
+    <li>
+        <a href="a-history-of-the-arab-peoples"><span class="book-title">A History of the Arab Peoples</span></a><br>
+        <span class="author">by <a href="albert-hourani">Albert Hourani</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

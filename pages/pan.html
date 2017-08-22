@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Pan
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="knut-hamsun">Knut Hamsun</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Norwegian
+                    </li>
+                    <li>
+                        <b>published</b><br>1894
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>A lone hunter accompanied only by his faithful dog, Aesop, Thomas Glahn roams Norway's northernmost wilds. Living out of a rude hut at the edge of a vast forest, Glahn pursues his solitary existence, hunting and fishing, until the strange girl Edvarda comes into his life.</p>
+            <p>In his 1894 breakthrough novel, <i>Pan</i>, Knut Hamsun provides a lyrical, yet disturbing analysis of love and the dark recesses of the human psyche. Sverre Lyngstad's superb new translation restores the power and virtuosity of Hamsun's original and includes an illuminating introduction and explanatory notes.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

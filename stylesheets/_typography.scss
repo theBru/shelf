@@ -1,0 +1,92 @@
+/* TYPOGRAPHY */
+
+body {
+    color: $primary-color;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+h1 {
+    @include header-font(2.5em);
+    & a {
+        color: $light-text-color;
+        &:hover {
+            color: $secondary-color;
+            border-bottom: none;
+        }
+    }
+}
+
+nav a {
+    @include header-font(1.5em);
+    color: white;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+article {
+    & h2 {
+        @include header-font(4em);
+        margin-bottom: $v-unit / 2;
+        & span {
+            @include text-font(0.5em);
+        }
+    }
+    & h3 {
+        @include header-font(2.5em);
+        margin: $v-unit 0 $v-unit/2 0;
+    }
+    & p {
+        @include text-font(1.4em);
+        line-height: 1.5em;
+        margin-bottom: $v-unit / 2;
+        width: 75%;
+    }
+    & li {
+        font-size: 1.4em;
+    }
+    & a:hover {
+        border-bottom: 1px solid $secondary-color;
+    }
+}
+
+aside {
+    & a {
+        color: $secondary-color;
+        &:hover {
+            border-bottom: 1px solid $secondary-color;
+        }
+    }
+    & li {
+        color: $primary-color;
+    }
+    & .book-title {
+        @include header-font(1.8em);
+        line-height: 1.5em;
+    }
+    & .author {
+        @include text-font(1em);
+    }
+    & #alphabet-navigation {
+        position: relative;
+        left: -0.5em;
+        & li a {
+            display: block;
+            text-align: center;
+            &:hover {
+                border: none;
+            }
+            &.selected {
+                background-color: $secondary-color;
+                color: white;
+            }
+        }
+    }
+}
+
+
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}

@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        The Modern Web: Multi-Device Web Development with HTML5, CSS3, and JavaScript
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="peter-gasston">Peter Gasston</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2013
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Today's web technologies are evolving at near-light speed, bringing the promise of a seamless Internet ever closer to reality. When users can browse the Web on a three-inch phone screen as easily as on a fifty-inch HDTV, what's a developer to do?</p>
+            <p>Peter Gasston's <i>The Modern Web</i> will guide you through the latest and most important tools of device-agnostic web development, including HTML5, CSS3, and JavaScript. His plain-English explanations and practical examples emphasize the techniques, principles, and practices that you'll need to easily transcend individual browser quirks and stay relevant as these technologies are updated.</p>
+            <h3>Opening</h3>
+            <p>We are in a time of unprecedented innovation on the Web. Not too long ago, one company, Microsoft, dominated the web landscape: in 2003, Internet Explorer was used some 95 percent of computers worldwide. This domination brought the advantage of a stable market for developers, but there was also a serious drawback: Microsoft chose to end nonessential work in IE, and innovation on the Web stagnated - a consequence of a lack of competition and a closed environment.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

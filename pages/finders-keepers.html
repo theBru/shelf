@@ -1,0 +1,51 @@
+<section>
+    <h2>
+        Finders Keepers
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2015
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>"Wake up, genius". So announces deranged fan Morris Bellamy to iconic author John Rothstein, who once created
+                the famous character Jimmy Gold and hasn't released anything since. Morris is livid, not just because his
+                favourite writer has stopped publishing, but because Jimmy Gold ended up as a sellout. Morris kills his idol
+                and empties his safe of cash, but the real haul is a collection of notebooks containing John Rothstein's
+                unpublished work ... including at least one more Jimmy Gold novel. Morris hides everything away before being
+                locked up for another horrific crime. But upon Morris's release thirty-five years later, he's about to discover
+                that teenager Pete Saubers has already found the stolen treasure - and no one but former police detective
+                Bill Hodges, along with his trusted associates Holly Gibney and Jerome Robinson, stands in the way of his
+                vengeance...
+            </p>
+            <h3>Opening</h3>
+            <p>"Wake up, genius".</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

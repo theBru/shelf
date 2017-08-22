@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Umberto Eco
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>5 January 1932 (Italy)
+                    </li>
+                    <li>
+                        <b>died</b><br>19 February 2016
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="the-book-of-legendary-lands">The Book of Legendary Lands</a> (2013)</li>
+                <li><a href="numero-zero">Numero Zero</a> (2015)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

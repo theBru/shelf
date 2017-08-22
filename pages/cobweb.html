@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Cobweb
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="neal-stephenson">Neal Stephenson</a> &amp; <a href="frederick-george">Frederick George</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1996
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The Gulf War is imminent and there's something mighty strange going on in the Agriculture Department of East Iowa University. When an Arab student turns up drunk - and dead - in the lake, redneck Deputy County Sheriff Clyde Banks gets a feeling he's on to something big. It's a suspicion shared by low-ranking CIA agent Betsy Vandeventer.</p>
+            <p>But before two great minds yell conspiracy theory, in steps top US policy-maker James Millikan.</p>
+            <p>Here's a man well used to dictating the Middle East's future - from a comfortable seat at a top Paris restaurant. While shenanigans in the Midwest might not be exactly his style, there's a technique that serves America well in all matters of national security. It's called the 'Cobweb', and it backfires every time...</p>
+            <h3>Opening</h3>
+            <p>Clyde Banks was standing in line, in the early stages of hypothermia, when he first saw his future wife, Desiree Dhont, wrestle. At the time, both of them were juniors at Wapsipinicon High School. Its Wade Olin gym, home of the Little Twisters, was named after the greatest wrestler in the history of the world - an alumnus. It was connected to the high school proper by a glass-walled breezeway, which enabled students to pass back and forth between academics and PE, even in the middle of winter, without getting lost in whiteouts.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

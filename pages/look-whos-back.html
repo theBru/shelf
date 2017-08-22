@@ -1,0 +1,70 @@
+<section>
+    <h2>
+        Look Who's Back
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="timur-vermes">Timur Vermes</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>German
+                    </li>
+                    <li>
+                        <b>published</b><br>2012
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Berlin, Summer 2011. Adolf Hitler wakes up on a patch of open ground, alive and well. Things have changed – no
+                Eva Braun, no Nazi party, no war. Hitler barely recognises his beloved Fatherland, filled with immigrants
+                and run by a woman.</p>
+            <p>People certainly recognise him, albeit as a flawless impersonator who refuses to break character. The unthinkable,
+                the inevitable happens, and the ranting Hitler goes viral, becomes a YouTube star, gets his own T.V. show,
+                and people begin to listen. But the Führer has another programme with even greater ambition – to set the
+                country he finds a shambles back to rights.</p>
+            <p><i>Look Who’s Back</i> stunned and then thrilled 1.5 million German readers with its fearless approach to the
+                most taboo of subjects. Naive yet insightful, repellent yet strangely sympathetic, the revived Hitler unquestionably
+                has a spring in his step.</p>
+            <h3>Opening</h3>
+            <p>It was probably the German people, the Volk, which surprised me most of all. I really did everything humanly
+                possible to destroy the foundations for a future existence on this soil, this soil which the enemy had desecrated.
+                Bridges, power stations, roads, railways - I gave instructions for every last one to be obliterated. I have
+                since checked when this order was issued - it was in March - and I believe I had made myself perfectly clear.
+                All supply facilities were to be razed, waterworks, telephone systems, resources, factories, workshops, farms,
+                all material assets - everything, and by that I did mean absolutely everything! These matters must be approached
+                with care and precision; a directive such as this can leave no room for doubt. For all we know of the ordinary
+                soldier at the front who, contained within his own particular sector, understandably lacks an overview of
+                the general situation, knowledge of the strategic, tactical necessities. The soldier who comes and says,
+                "Do I really have to set light to this ... this ... [let's say] kiosk, too? Can't we let it fall into enemy
+                lands? Is it really so bad if the kiosk falls into enemy hands?" Bad? Of course it's bad! The enemy reads
+                newspapers too, doesn't he? He will use the kiosk to conduct business, he will turn the kiosk against us,
+                everything he finds will be turned against us! Every material asset - let me underline this once more - every
+                single material asset mustg be destroyed. Not just houses, but doors too. And door handles. Then the screws,
+                and not only the long ones. The screws must be unscrewed and then ruthlessly bent out of shape. The doors
+                must be ground into sawdust. And then burned to cinders. Else the enemy will show no mercy; he will walk
+                in and out of these doors as it pleases him. But present him with a broken door handle, bent screws and a
+                heap of ashes - well, Mr Churchill, be my guest! At all events these requirements are the brutal consequence
+                of war - of this I have always been aware - and thus the instructions I gave could not have been worded differently,
+                even though the background to my directive was different.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

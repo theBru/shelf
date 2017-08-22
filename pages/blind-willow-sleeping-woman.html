@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Blind Willow, Sleeping Woman
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="haruki-murakami">Haruki Murakami</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Japanese
+                    </li>
+                    <li>
+                        <b>published</b><br>2006
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Here are animated crows, a criminal monkey, an ice man, as well as the dreams that shape us and the things we wish for. Whether during a chance reunion in Italy, a romantic exile in Greece, a holiday in Hawaii or in the grip of everyday life, Murakami's characters confront loss, or sexuality, or the glow of a firefly, or the impossible distance between those who ought to be closest of all.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

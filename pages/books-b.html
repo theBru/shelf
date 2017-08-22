@@ -1,0 +1,36 @@
+<ol>
+    <li>
+        <a href="the-best-of-all-possible-worlds"><span class="book-title">The Best of All Possible Worlds</span></a><br>
+        <span class="author">by <a href="karen-lord">Karen Lord</a></span>
+    </li>
+    <li>
+        <a href="the-big-sleep"><span class="book-title">The Big Sleep</span></a><br><span class="author">by <a href="raymond-chandler">Raymond Chandler</a></span>
+    </li>
+    <li>
+        <a href="black-mass"><span class="book-title">Black Mass</span></a><br><span class="author">by <a href="john-gray">John Gray</a></span>
+    </li>
+    <li>
+        <a href="blind-willow-sleeping-woman"><span class="book-title">Blind Willow, Sleeping Woman</span></a><br><span class="author">by <a href="haruki-murakami">Haruki Murakami</a></span>
+        </li>
+    <li>
+        <a href="bonjour-tristesse"><span class="book-title">Bonjour Tristesse</span></a><br><span class="author">by <a href="francoise-sagan">Françoise Sagan</a></span>
+    </li>
+    <li>
+        <a href="the-book-of-legendary-lands"><span class="book-title">The Book of Legendary Lands</span></a><br><span class="author">by <a href="umberto-eco">Umberto Eco</a></span>
+    </li>
+    <li>
+        <a href="the-buried-giant"><span class="book-title">The Buried Giant</span></a><br><span class="author">by <a href="kazuo-ishiguro">Kazuo Ishiguro</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

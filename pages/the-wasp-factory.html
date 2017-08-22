@@ -1,0 +1,47 @@
+<section>
+    <h2>
+        The Wasp Factory
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="iain-banks">Iain Banks</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1984
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Two years after I killed Blyth I murdered my young brother Paul, for quite different reasons than I'd disposed of Blyth, and then a year after that I did for my young cousin Esmerelda more or less on a whim.</p>
+            <p>That's my score to date.</p>
+            <p>Three</p>
+            <p>I haven't killed anybody for years, and don't intend to ever again.</p>
+            <p>It was just a stage I was going through.</p>
+            <h3>Opening</h3>
+            <p>I had been making the rounds of the Sacrifice Poles the day we heard my brother had escaped. I already knew something was going to happen; the Factory told me.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

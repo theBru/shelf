@@ -1,0 +1,20 @@
+<ol>
+    <li>
+        <a href="kafka-on-the-move"><span class="book-title">Kafka on the Move</span></a><br><span class="author">by <a href="haruki-murakami">Haruki Murakami</a></span>
+    </li>
+    <li>
+        <a href="king-rat"><span class="book-title">King Rat</span></a><br><span class="author">by <a href="china-mieville">China Miéville</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

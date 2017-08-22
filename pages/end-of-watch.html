@@ -1,0 +1,49 @@
+<section>
+    <h2>
+        End of Watch
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2016
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>For nearly six years, in Room 217 of the Lakes Region Traumatic Brain Injury Clinic, Brady Hartsfield has been
+                in a persistent vegetative state. A complete recovery seems unlikely for the insane perpatrator of the "Mercedes
+                Massacre", in which eight people were killed and many more maimed for life. But behind the vacant stare,
+                Brady is very much awake and aware, having been pumped full of experimental drugs ... scheming, biding his
+                time as he trains himself to take full advantage of the deadly new powers that allow him to wreak unimaginable
+                havoc without ever leaving his hospital room. Brady Hartsfield is about to embark on a new reign of terror
+                against thousands of innocents, hell-bent on taking revenge against anyone who crossed his path - with retired
+                detective Bill Hodges at the very top of that long list ...</p>
+            <h3>Opening</h3>
+            <p>It's always darkest before the dawn.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

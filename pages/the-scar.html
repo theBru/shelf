@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        The Scar [Bas-Lag, #2]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="china-mieville">China Miéville</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2002
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>A human cargo bound for servitude in exile.</p>
+            <p>A pirate city hauled across the ocean.</p>
+            <p>A hidden miracle about be revealed.</p>
+            <p>This is the story of a prisoner's journey. The search for the island of a forgotten people, for the most astonishing beast in the seas, and ultimately for a fabled place - a massive wound in reality, a source of unthinkable power and danger...</p>
+            <h3>Opening</h3>
+            <p>A mile below the lowest cloud, rock breaches water and the sea begins.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

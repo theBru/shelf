@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Man Plus [Man Plus, #1]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="frederik-pohl">Frederik Pohl</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1976
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Ill luck made Roger Torraway the subject of the Man Plus Programme, but it was deliberate biological engineering which turned him into a monster -- a machine perfectly adapted to survive on Mars. For according to computer predictions, Mars is humankind's only alternative to extinction. But beneath his monstrous exterior, Torraway still carries a man's capacity for suffering.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

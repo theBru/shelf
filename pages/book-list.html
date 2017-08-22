@@ -1,0 +1,39 @@
+<ol>
+    <li>
+        <a href="absolution-gap"><span class="book-title">Absolution Gap</span></a><br><span class="author">by <a href="alastair-reynolds">Alastair Reynolds</a></span>
+    </li>
+    <li>
+        <a href="bonjour-tristesse"><span class="book-title">Bonjour Tristesse</span></a><br><span class="author">by <a href="francoise-sagan">Françoise Sagan</a></span>
+    </li>
+    <li>
+        <a href="disordered-world"><span class="book-title">Disordered World</span></a><br>
+        <span class="author">by <a href="amin-maalouf">Amin Maalouf</a></span>
+    </li>
+    <li>
+        <a href="end-of-watch"><span class="book-title">End of Watch</span></a><br><span class="author">by <a href="stephen-king">Stephen King</a></span>
+    </li>
+    <li>
+        <a href="finders-keepers"><span class="book-title">Finders Keepers</span></a><br><span class="author">by <a href="stephen-king">Stephen King</a></span>
+    </li>
+    <li>
+        <a href="hear-the-wind-sing"><span class="book-title">Hear the Wind Sing</span></a><br><span class="author">by <a href="haruki-murakami">Haruki Murkami</a></span>
+    </li>
+    <li>
+        <a href="numero-zero"><span class="book-title">Numero Zero</span></a><br><span class="author">by <a href="umberto-eco">Umberto Eco</a></span>
+    </li>
+    <li>
+        <a href="pinball-1973"><span class="book-title">Pinball, 1973</span></a><br><span class="author">by <a href="haruki-murakami">Haruki Murkami</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

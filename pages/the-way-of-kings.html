@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        The Way of Kings [The Stormlight Archive, #1]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="brandon-sanderson">Brandon Sanderson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2010
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Roshar is a world of stone and storms. Uncanny tempests of incredible power sweep across the rocky terrain so frequently that they have shaped ecology and civilization alike. Animals hide in shells, trees pull in branches, and grass retracts into the soilless ground. Cities are built only where the topography offers shelter.</p>
+            <p>It has been centuries since the fall of the ten consecrated orders known as the Knights Radiant, but their Shardblades and Shardplate remain: mystical swords and suits of armor that transform ordinary men into near-invincible warriors. Men trade kingdoms for Shardblades. Wars are fought for them, and won by them.</p>
+            <p>One such war is about to swallow up a soldier, a brightlord and a young woman scholar.</p>
+            <p>On a world scoured down to the rock by terrifying hurricanes that blow through every few days is a young spearman, forced into the army of a Shardbearer, led to war against an enemy he doesn't understand and doesn't really want to fight.</p>
+            <h3>Opening</h3>
+            <p>Kalak rounded a rocky stone ridge and stumbled to stop the body of a dying thundercast. The enormous stone beast lay on its side, riblike protrusions from its chest broken and cracked. The monstrosity was vaguely skeletal in shape, with unnaturally long limbs that sprouted from its granite shoulders. The eyes were deep red spots on the arrowhead face, as if created by a fire burning deep within the stone. They faded.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

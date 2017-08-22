@@ -1,0 +1,23 @@
+<ol>
+    <li>
+        <a href="the-wasp-factory"><span class="book-title">The Wasp Factory</span></a><br><span class="author">by <a href="iain-banks">Iain Banks</a></span>
+    </li>
+    <li>
+        <a href="the-way-of-kings"><span class="book-title">The Way of Kings</span></a><br><span class="author">by <a href="brandon-sanderson">Brandon Sanderson</a></span>
+     </li>
+    <li>
+        <a href="words-of-radiance"><span class="book-title">Words of Radiance</span></a><br><span class="author">by <a href="brandon-sanderson">Brandon Sanderson</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

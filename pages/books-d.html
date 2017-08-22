@@ -1,0 +1,18 @@
+<ol>
+    <li>
+        <a href="disordered-world"><span class="book-title">Disordered World</span></a><br>
+        <span class="author">by <a href="amin-maalouf">Amin Maalouf</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

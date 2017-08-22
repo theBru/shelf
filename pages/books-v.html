@@ -1,0 +1,17 @@
+<ol>
+    <li>
+        <a href="pinball-1973"><span class="book-title">Pinball, 1973</span></a><br><span class="author">by <a href="haruki-murakami">Haruki Murkami</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

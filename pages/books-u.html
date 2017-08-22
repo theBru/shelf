@@ -1,0 +1,20 @@
+<ol>
+    <li>
+        <a href="undermajordomo-minor"><span class="book-title">Undermajordomo Minor</span></a><br><span class="author">by <a href="patrick-dewitt">Patrick DeWitt</a></span>
+    </li>
+    <li>
+        <a href="underworld"><span class="book-title">Underworld</span></a><br><span class="author">by <a href="don-delillo">Don DeLillo</a></span>
+    </li>
+
+</ol>
+
+<script>
+    $(document).ready(function () {
+        $('aside #book-list ol li a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

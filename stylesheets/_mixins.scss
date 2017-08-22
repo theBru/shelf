@@ -1,0 +1,23 @@
+@mixin flex-grid($spacing) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: $spacing;
+    align-content: flex-start;
+}
+
+@mixin header-font($font-size) {
+    font-family: $header-font;
+    font-size: $font-size;
+}
+
+@mixin text-font($font-size) {
+    font-family: $condensed-font;
+    font-size: $font-size;
+    letter-spacing: 0.05em;
+}
+
+@mixin condensed-font($font-size) {
+    font-family: $condensed-font;
+    font-size: $font-size;
+}
