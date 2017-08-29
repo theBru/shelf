@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Hundred-Year-Old-Man Who Climbed out of the Window and Disappeared
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jonas-jonasson">Jonas Jonasson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Swedish
+                    </li>
+                    <li>
+                        <b>published</b><br>2009
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>It all starts on the one-hundredth birthday of Allan Karlsson. Sitting quietly in his room in an old people’s home, he is waiting for the party he-never-wanted-anyway to begin. The Mayor is going to be there. The press is going to be there. But, as it turns out, Allan is not… Slowly but surely Allan climbs out of his bedroom window, into the flowerbed (in his slippers) and makes his getaway.</p>
+            <h3>Opening</h3>
+            <p>You might think he coule have made up his mind earlier, and been man enough to inform his surroundings of his decision. But Allen Karlsson had never been given to pondering things too long.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

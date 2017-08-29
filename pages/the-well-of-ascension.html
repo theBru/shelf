@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Well of Ascension [Mistborn, #2]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="brandon-sanderson">Brandon Sanderson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2007
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Vin, the street urchin who has grown into the most powerful Mistborn in the land, and Elend Venture, the idealistic young nobleman who loves her, must build a healthy new society in the ashes of an empire. Three separate armies attack. As the siege tightens, an ancient legend seems to offer a glimmer of hope. But even if it really exists, no one knows where to find the Well of Ascension or what manner of power it bestows.</p>
+            <h3>Opening</h3>
+            <p>The army crept like a dark stain across the horizon.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

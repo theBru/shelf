@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Kafka on the Shore
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="haruki-murakami">Haruki Murkami</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Japanese
+                    </li>
+                    <li>
+                        <b>published</b><br>2002
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p><i>Kafka on the Shore</i>, a tour de force of metaphysical reality, is powered by two remarkable characters: a teenage boy, Kafka Tamura, who runs away from home either to escape a gruesome oedipal prophecy or to search for his long-missing mother and sister; and an aging simpleton called Nakata, who never recovered from a wartime affliction and now is drawn toward Kafka for reasons that, like the most basic activities of daily life, he cannot fathom. Their odyssey, as mysterious to them as it is to us, is enriched throughout by vivid accomplices and mesmerizing events.</p> 
+            <p>Cats and people carry on conversations, a ghostlike pimp employs a Hegel-quoting prostitute, a forest harbors soldiers apparently unaged since World War II, and rainstorms of fish (and worse) fall from the sky. There is a brutal murder, with the identity of both victim and perpetrator a riddle—yet this, along with everything else, is eventually answered, just as the entwined destinies of Kafka and Nakata are gradually revealed, with one escaping his fate entirely and the other given a fresh start on his own.</p>
+            <h3>Opening</h3>
+            <p>"So you're all set for money, then?" the boy named Crow asks in his characteristic sluggish voice. The kind of voice you have when you've just woken up and your mouth still feels heavy and dull. But he's just pretending. He's totally awake. As always.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

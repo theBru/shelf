@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Flight Behaviour
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="barbara-kingsolver">Barbara Kingsolver</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2012
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p><i>Flight Behavior</i> is a brilliant and suspenseful novel set in present day Appalachia; a breathtaking parable of catastrophe and denial that explores how the complexities we inevitably encounter in life lead us to believe in our particular chosen truths. Kingsolver's riveting story concerns a young wife and mother on a failing farm in rural Tennessee who experiences something she cannot explain, and how her discovery energizes various competing factions—religious leaders, climate scientists, environmentalists, politicians—trapping her in the center of the conflict and ultimately opening up her world.</p>
+            <h3>Opening</h3>
+            <p>A certain feeling comes from throwing your good life away, and it is one part rapture. Or so it seemed for now, to a woman with flame-colored hair who marched uphill to meet her demise. Innocence was no part of this. She knew her own recklessness and marveled, really, at how one hard little flint of thrill could outweigh the pillowy, suffocating aftermath of a long disgrace. The shame and loss would infect her children too, that was the worst of it, in a town where everyone knew them. Even the teenage cashiers at the grocery would take an edge with her after this, clicking painted fingernails on the counter while she wrote her check, eyeing the oatmeal and frozen peas of an unhinged family and exchanging looks with the bag boy: She's that one. How they admired their own steadfast lives. Right up the day when hope in all its versions went out of stock, including the crummy discount brands, and the heart had just one instruction left: run. Like a hunted animal, or a racehorse, winning and losing felt exactly alike at this stage, with the same coursing of blood and shortness of breath. She smoked too much, that was another mortification to throw in with the others. But she had cast her lot. Plenty of people took this way out, looking future damage in the eye and naming it something else. Now it was her turn. She could clain the tightness in her chest and call it bliss, rather than the same breathlessness she could be feeling at home right now while toting a heavy laundry basket, behaving like a sensible mother of two.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

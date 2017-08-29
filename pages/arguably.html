@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Arguably
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="christopher-hitchens">Christopher Hitchens</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2011
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Topics range from ruminations on why Charles Dickens was among the best of writers and the worst of men to the haunting science fiction of J.G. Ballard; from the enduring legacies of Thomas Jefferson and George Orwell to the persistent agonies of anti-Semitism and jihad. Hitchens even looks at the recent financial crisis and argues for the enduring relevance of Karl Marx. </p>
+            <h3>Opening</h3>
+            <p>The three names on the dedication page belonged to a Tunisian street vendor, and Egyptian restaurateur, and a Libyan husband and father. In the spring of 2011, the first of them set himelf alight in the town of Sidi Bouzid, in protest at just one too many humiliations at the hands of petty officialdom. The second also took his own life as Egyptians began to rebel en masse at the stagnation and meaninglessness of Munarak's Egypt. The third, it might be said, gave his life as well as took it: loading up his modest car with petrol and homemade explosives and blasting open the gate of the Katiba barracks in Benghazi - symbolic Bastille of the detested and demented Qadafi regime in Libya.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
