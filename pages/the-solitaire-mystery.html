@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Solitaire Mystery
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jostein-gaarder">Jostein Gaarder</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Norwegian
+                    </li>
+                    <li>
+                        <b>published</b><br>1990
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Twelve-year-old Hans Thomas lives alone with his father, a man who likes to give his son lessons about life and has a penchant for philosophy. Hans Thomas' mother left when he was four (to find herself) and the story begins when father and son set off on a trip to Greece, where she now lives, to try to persuade her to come home. En route, in Switzerland, Hans Thomas is given a magnifying glass by a dwarf at a petrol station, and the next day he finds a tiny book in his bread roll which can only be read with a magnifying glass. How did the book come to be there? Why does the dwarf keep showing up? It is all very perplexing and Hans Thomas has enough to cope with, with the daunting prospect of seeing his mother. Now his journey has turned into an encounter with the unfathomable...or does it all have a logical explanation?</p>
+            <h3>Opening</h3>
+            <p>The great journey to the homeland of the philosophers began in Arendal, an old shipping town on the south coast of Norway. We took the ferry, the Bolero, from Kristiansand to Hirtshals. I'm not going to say much about the trip down through Denmark and Germany, because apart from Legoland and the large dock area in Hamburg, we saw little more than highways and farms. It was only when we got to the Alps that things really began to happen.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

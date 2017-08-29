@@ -1,0 +1,42 @@
+<section>
+    <h2>
+       Cosmopolis
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="don-delillo">Don DeLillo</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2003
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>It is a stunningly eventful day in the life of Eric Packer, a multi-billionaire who has recently married the heiress of a vast European fortune. A violent protest is being staged by anti-globalist groups and Eric fears that he may be a target. He is the target, but not by the protestors.</p>
+            <h3>Opening</h3>
+            <p>Sleep failed him more often now, not once or twice a week but four times, five. What did he do when this happened? He did not take long walks into the scrolling dawn. There was no friend he loved enough to harrow with a call. What was there to say? It was a matter of silences, not words.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

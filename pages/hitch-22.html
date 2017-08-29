@@ -1,0 +1,42 @@
+<section>
+    <h2>
+       Hitch-22: A Memoir
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="christopher-hitchens">Christopher Hitchens</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2010
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Most who have observed Christopher Hitchens over the years would agree that he possesses a ferocious intellect and is unafraid to tackle the most contentious subjects. Now 60, English-born and American by adoption; all atheist and partly Jewish; bohemian (even listing "drinking" along with "disputation" as "hobbies" in "Who's Who"), he has held to a consistent thread of principle whether opposing war in Vietnam or supporting intervention in Iraq. As a foreign correspondent in some of the world's nastiest places, a lecturer and teacher and an esteemed literary critic, Hitchens manifests a style that is at once ironic, witty, and tough-minded. A legendary bon vivant with an unquenchable thirst for literature, he has sometimes ridiculed those who claim that the personal is political, though he has often seemed to illustrate that very idea. Readers will find that his own many opposites attract, as do his many sketches of friendship and ex-friendship, from Martin Amis to Noam Chomsky. Condemned to be able to see both sides of any argument, Christopher Hitchens has contradictions that contain their own multitudes.</p>
+            <h3>Opening</h3>
+            <p>Before me is a handsome edition of Face to Face, the samrt magazine that goes out to the supporters of London's National Portrait Gallery. It contains the usual notices of future events and exhibitions. The page that has caught and held my eye is the one which calls attention to a show that starts on 10 January 2009, titled "Martin Amis and Friends." The event is to feature the work of a gifted photographer named Angela Gorgas, who was Martin's lover between 1977 and 1979. On the page is a photograph taken in Paris in 1979. It shows, from left to right, myself and James Fenton and Martin, ranged along a balustrade that overlooks the city of Paris. I remember the occasion well: it was after a decent lunch somewhere in Montmartre and we would have been looking over Angela's shapely shoulders at the horrible wedding-cake architecture of Sacre Coeur. (Perhaps this explains the faintly dyspeptic expression on my features.) In the accompanying prose, apparently written by Angela, is the following sentence about the time she first met the bewitching young Amis: "Martin was literary editor of the New Statesman, working with the late Christopher Hitchens and Julian Barnes, who was married to Pete Kavanagh, Martin's then literary agent."</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

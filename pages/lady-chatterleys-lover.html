@@ -1,0 +1,42 @@
+<section>
+    <h2>
+       Lady Chatterley's Lover
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="d-h-lawrence">D. H. Lawrence</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1928
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>With her soft brown hair, lithe figure and big, wondering eyes, Constance Chatterley is possessed of a certain vitality. Yet she is deeply unhappy, married to a physical and emotional cripple, and embarks on an affair with Mellors, the gamekeeper.</p>
+            <h3>Opening</h3>
+            <p>Ours is essentially a tragic age, so we refuse to take it tragically. The cataclysm has happened, we are among the ruins, we start to build up new little habitats, to have new little hopes. It is rather hard work: there is now no smooth road into the future: but we go around, or scramble over the obstacles. We've got to live, no matter how many skies have fallen.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

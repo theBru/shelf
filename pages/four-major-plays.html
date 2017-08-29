@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Four Major Plays [A Doll's House / Ghosts / Hedda Gabler / The Master Builder]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="henrik-ibsen">Henrik Ibsen</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Norwegian
+                    </li>
+                    <li>
+                        <b>published</b><br>2008
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Taken from the highly acclaimed Oxford Ibsen, this collection of Ibsen's plays includes A Doll's House, Ghosts, Hedda Gabler, and The Master Builder.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

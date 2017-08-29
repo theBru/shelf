@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Book of Saladin [Islam Quintet, #2]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="tariq-ali">Tariq Ali</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1998
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p><i>The Book of Saladin</i> is the fictional memoir of Saladin, the Kurdish liberator of Jerusalem, as dictated to a Jewish scribe, Ibn Yakub. Saladin grants Ibn Yakub permission to talk to his wife and retainers so that he might present a full portrait in the Sultan's memoirs. A series of interconnected stories follows, tales brimming over with warmth, earthy humor and passions in which ideals clash with realities and dreams are confounded by desires.</p>
+            <h3>Opening</h3>
+            <p>I have not thought of our old home for many years. It is a long time now since the fire. My house, my wife, my daughter, my two-year-old grandson - all trapped inside like caged animals. If fate had not willed otherwise, I too would have been reduced to ashes. How often have I wished that I could have been there to share the agony.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Sisters Brothers
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="patrick-dewitt">Patrick deWitt</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2011
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>It is 1851,for gold has swept the American frontier. Two brother - the notorious Eli and Charlie Sisters - are on the road to California, following the trail of an elusive prospector, Hermann Kermit Warm. On this odyssey Eli and his brother cross paths with a remarkable cast of characters - losers, cheaters, and ne'er-do-wells from all stripes of - and Eli begins to question what he does for a living, and whom he does it for.</p>
+            <h3>Opening</h3>
+            <p>I was sitting outside the commodore's mansion, waiting for my brother Charlie to come out with the news of the job. It was threatening to snow and I was cold and for want of something to do I studied Charlie's new horse, Nimble. My new horse was called Tub. We did not believe in naming horses but they were given to us as partial payment for the last job with the names intact, so that was that. Our unnamed previous horses had been immolated, so it was not as though we did not need these new ones but I felt we should have been given money to purchase horses of our own choosing, horses without histories and habits and names they expected to be addressed by. I was very fond of my previous horse and lately had been experiencing visions while I slept of his death, his kicking, burning legs, his hot-popping eyeballs. He could cover sixty miles in a day like a gust of wind and I never laid a hand on him except to stroke him or clean him, and I tried not think of him burning up in that barn but if the vision arrived uninvited how was I to guard against it? Tub was a healthy enough animal but would have been better suited to some other, less ambitious owner. He was portly and low-backed and could not travel more than fifty miles in a day. I was often forced to whip him, which some men do not mind doing and which in fact some enjoy doing, but which I did not like to do; and afterward he, Tub, believed me cruel and thought to himself, Sad life, sad life.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

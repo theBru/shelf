@@ -1,0 +1,40 @@
+<section>
+    <h2>
+       Miss Peregrine's Home for Peculiar Children [Miss Peregrine's Peculiar Children, #1]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ransom-riggs">Ransom Riggs</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2011
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>16-year-old Jacob has discovered the ruins of Miss Peregrine's Home for Peculiar Children. As Jacob explores the abandoned building, he realises that the children were more than just peculiar - they may have been dangerous. And somehow - impossible though it seems - they may still be alive.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

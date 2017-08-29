@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        The Twelve [The Passage #2]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="justin-cronin">Justin Cronin</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2012
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>At the end of 'The Passage', the great viral plague had left a small group of survivors clinging to life amidst a world transformed into a nightmare. In the second volume of this epic trilogy, this same group of survivors, led by the mysterious, charismatic Amy, go on the attack, leading an insurrection against the virals.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
