@@ -3,6 +3,9 @@
         <a href="absolution-gap"><span class="book-title">Absolution Gap</span></a><br><span class="author">by <a href="alastair-reynolds">Alastair Reynolds</a></span>
     </li>
     <li>
+        <a href="the-age-of-miracles"><span class="book-title">The Age of Miracles</span></a><br><span class="author">by <a href="karen-thompson-walker">Karen Thompson Walker</a></span>
+    </li>
+    <li>
         <a href="the-alloy-of-law"><span class="book-title">The Alloy of Law</span></a><br><span class="author">by <a href="brandon-sanderson">Brandon Sanderson</a></span>
     </li>
     <li>
@@ -15,12 +18,11 @@
 </ol>
 
 <script>
-    $(document).ready(function () {
-        $('aside #book-list ol li a').click(function () {
+    $(document).ready(function() {
+        $('aside #book-list ol li a').click(function() {
             var pageToLoad = $(this).attr('href');
             $('article').load('/pages/' + pageToLoad + '.html');
             return false;
         });
     });
-
 </script>
