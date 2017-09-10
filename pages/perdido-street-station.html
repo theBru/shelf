@@ -1,0 +1,44 @@
+<section>
+    <h2>
+       Perdido Street Station [New Crobuzon, #1]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="china-mieville">China Miéville</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2000
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The metropolis of New Crobuzon sprawls at the centre of its own bewildering world. Humans and mutants and arcane races throng the gloom beneath its chimneys, where the rivers are sluggish with unnatural effluent, and factories and foundries pound into the night. For more than a thousand years, the parliament and its brutal militia have ruled over a vast array of workers and artists, spies, magicians, junkies and whores.</p>
+            <p>Now a stranger has come, with a pocketful of gold and an impossible demand, and inadvertently something unthinkable is released.</p>
+            <p>As the city becomes gripped by an alien terror, the fate of millions depends on a clutch of outcasts on the run from lawmakers and crimelords alike. The urban nightscape becomes a hunting ground. Battles rage in the shadows of bizarre buildings. And a reckoning is due at the city's heart, under the vast chaotic vaults of Perdido Street Station.</p>
+            <h3>Opening</h3>
+            <p>A window burst open high above the market. A basket flew from it and arced towards the oblivious crowd. It spasmed in mid-air, then spun and continued earthwards at a slower, uneven pace. Dancing precariously as it descended, its wire-mesh caught and skittered on the building's rough hide. It scrabbed at the wall, sending paint and concrete dust plummeting before it.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

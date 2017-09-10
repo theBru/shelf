@@ -1,0 +1,42 @@
+<section>
+    <h2>
+       Anansie Boys
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="neil-gaiman">Neil Gaiman</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2005
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Fat Charlie Nancy is not having a good week. His estranged father recently dropped dead on a karaoke stage and has left Fat Charlie with much more than embarrassment. Because, you see, Charlie has discovered that his dad wasn't just any dad. He was Anansi the trickster spider-god. Anansi is the spirit of rebellion, able to overturn the social order, create wealth out of thin air, and even baffle the devil. No wonder Fat Charlie’s life is about to be turned upside down.</p>
+            <h3>Opening</h3>
+            <p>It begins, as most things begin, with a song. In the beginning, after all, were the words, and they came with a tune. That was how the world was made, how the void was divided, how the lands and the stars and the dreams and the little gods and the animals, how all of them came into the world.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
