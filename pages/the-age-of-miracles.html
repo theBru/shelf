@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        The Age of Miracles
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="karen-thompson-walker">Karen Thompson Walker</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2012
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>What if our 24-hour day grew longer, first in minutes, then in hours, until day becomes night and night becomes day? What effect would this slowing have on the world? On the birds in the sky, the whales in the sea, the astronauts in space,
+                and on an eleven-year-old girl, grappling with emotional changes in her own life.?</p>
+            <p>One morning, Julia and her parents wake up in their suburban home in California to discover, along with the rest of the world, that the rotation of the earth is noticeably slowing. The enormity of this is almost beyond comprehension. And yet,
+                even if the world is, in fact, coming to an end, as some assert, day-to-day life must go on. Julia, facing the loneliness and despair of an awkward adolescence, witnesses the impact of this phenomenon on the world, on the community, on
+                her family and on herself.</p>
+            <h3>Opening</h3>
+            <p>We didn't notice right away. We couldn't feel it.</p>
+        </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function() {
+        $('article a').click(function() {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+</script>
