@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Twenty-Seventh City
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jonathan-franzen">Jonathan Franzen</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1988
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>St. Louis, Missouri, is a quietly dying river city until it hires a new police chief: a charismatic young woman from Bombay, India, named S. Jammu. No sooner has Jammu been installed, though, than the city's leading citizens become embroiled in an all-pervasive political conspiracy.</p>
+            <h3>Opening</h3>
+            <p>In early June Chief William O'Connell of the St. Louis Police Department announced his retirement, and the Board of Police Commissioners, passing over the favored candidates of the city political establishment, the black community, the press, the Officers Association and the Missouri governor, selected a woman, formerly with the police in Bombay, India, to begin a five-year term as chief. The city was apalled, but the woman - one S. Jammu - assumed the post before anyone could stop her.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

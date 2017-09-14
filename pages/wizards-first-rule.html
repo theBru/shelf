@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Wizard's First Rule [Sword of Truth, #1]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="terry-goodkind">Terry Goodkind</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1994
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Richard Cypher holds the key to the fate of three nations. But until he learns the Wizard's First Rule his chances of succeeding in his task look slim. And his biggest problem is admitting that magic exists at all.</p>
+            <h3>Opening</h3>
+            <p>It was an odd-looking vine. Dusty variegated leaves hunkered against a stem that wound in a stranglehold around the smooth trunk of a balsam fir. Sap drooled down the wounded bark, and dry limbs slumped, making it look as if the tree were trying to voice a moan into the cool, damp morning air. Pods stuck out from the vine here and there along its length, almost seeming to look warily about for witnesses.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

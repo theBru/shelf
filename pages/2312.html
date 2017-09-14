@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        2312
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="kim-stanley-robinson">Kim Stanley Robinson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2012
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The year is 2312. Scientific advances have opened gateways to an extraordinary future. But in 2312, a sequence of events will force humanity to confront past, present and future. For Swan Er Hong, her life will never be the same again. Once a designer of worlds, now Swan will be led into a plot to destroy them.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
