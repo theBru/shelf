@@ -1,0 +1,47 @@
+<section>
+    <h2>
+        A Dance with Dragons [A Song of Ice and Fire, #5]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="george-r-r-martin">George R. R. Martin</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2011
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>In the aftermath of a colossal battle, new threats are emerging from every direction.</p>
+            <p>Tyrion Lannister, having killed his father, and wrongfully accused of killing his nephew, King Joffrey, has escaped from King’s Landing with a price on his head.</p>
+            <p>To the north lies the great Wall of ice and stone – a structure only as strong as those guarding it. Eddard Stark's bastard son Jon Snow has been elected 998th Lord Commander of the Night’s Watch. But Jon has enemies both inside and beyond the Wall.</p>
+            <p>And in the east Daenerys Targaryen struggles to hold a city built on dreams and dust.</p>
+            <h3>Opening</h3>
+            <p>The night was rank with the smell of man.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

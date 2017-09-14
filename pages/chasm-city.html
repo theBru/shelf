@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Chasm City [Revelation Space, #0.3]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="alastair-reynolds">Alastair Reynolds</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2001
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Tanner Mirabel was a security specialist who never made a mistake - until the day a woman in his care was blown away by Argent Reivich, a vengeful young postmortal. Tanner's pursuit of Reivich takes him across light-years of space to Chasm City, the domed human settlement on the otherwise inhospitable planet of Yellowstone. But Chasm City is not what it was. The one-time high-tech utopia has become a Gothic nightmare: a nanotechnological virus has corrupted the city's inhabitants as thoroughly as it has the buildings and machines. Before the chase is done, Tanner will have to confront truths which reach back centuries, towards deep space and an atrocity history barely remembers.</p>
+            <h3>Opening</h3>
+            <p>Welcome to the Epsilon Eridani system.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
