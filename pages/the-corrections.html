@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        The Corrections
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jonathan-franzen">Jonathan Franzen</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2001
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The Lamberts - Enid and Alfred and their three grown-up children ~ are a troubled family living in a troubled age.</p>
+            <p>Alfred is slowly losing his mind to Parkinson's disease. As his condition worsens, and the Lamberts are forced to face the secrets and failures that haunt them, Enid sets her heart on gathering everyone together for one last family Christmas.</p>
+            <h3>Opening</h3>
+            <p>The madness of an autumn prarie cold front coming through. You could feel it: something terrible was going to happen. The sun low in the sky, a minor light, a cooling star. Gust after gust of disorder. Trees restless, temperatures falling, the whole northern religion of things coming to an end. No children in the yards here. Shadows lengthened on yellowing zoysia. Red oaks and pin oaks and swamp white oaks rained acorns on houses with no mortgage. Storm windows shuddered in the empty bedrooms. And the drone and hiccup of a clothes dryer, the nasal contention of a leaf blower, the ripening of local apples in a paper bag, the smell of the gasoline with which Alfred Lambert had cleaned the paintbrush from his morning painting of the wicker love seat.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

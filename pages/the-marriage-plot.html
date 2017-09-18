@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        The Marriage Plot
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jeffrey-eugenides">Jeffrey Eugenides</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2011
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>In the spring of her final year, Madeleine Hanna has enrolled in a semiotics course 'to see what all the fuss is about'. She falls in love with Leonard Bankhead - charismatic loner and college Darwinist - who introduces her to the ecstasies of immediate experience. Then Mitchell Grammaticus resurfaces, and wants her to be his wife.</p>
+            <h3>Opening</h3>
+            <p>To start with, look at all the books. There were her Edith Wharton novels, arranged not by title but date of publication; there was the complete Modern Library set of Henry James, a gift from her father on her twenty-first birthday; there were the dog-eared paperbacks assigned in her college courses, a lot of Dickens, a smidgen of Trollope, along with good helpings of Austen, George Eliot, and the redoubtable Brontë sisters. There were a whole lot of black-and-white New Directions paperbacks, mostly poetry by people like H.D. or Denise Levertov. There were the Collette novels she read on the sly. There was the first edition of Couples, belonging to her mother, which Madeleine had surreptitiously dipped into back in sixth grade and which she was using now to provide textual support in her English honors theses on the marriage plot. There was, in short, this mid-size but still portable library representing pretty much everything Madeleine had read in college, a collection of texts, seemingly chosen at random, whose focus slowly narrowed, like a personality test, a sophisticated one you couldn't trick by anticipating the implications of its questions and finally got so lost in that your only recourse was to answer the sinmple truth. And then you waited for the result, hoping for 'Artistic', or 'Passionate', thinking you could live with 'Sensitive', secretly fearing 'Narcissistic' and 'Domestic', but finally being presented with an outcome that cut both ways and made you feel different depending on the day, the hour, or the guy you happened to be dating: 'Incurably romantic'.</p>          
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

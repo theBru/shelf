@@ -1,0 +1,46 @@
+<section>
+    <h2>
+        Reamde
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="neal-stephenson">Neal Stephenson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2011
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Across the globe, millions of computer screens flicker with the artfully coded world of T'Rain - an addictive internet role-playing game of fantasy and adventure.</p>
+            <p>But backstreet hackers in China have just unleashed a contagious virus called Reamde, and as it rampages through the gaming world spreading from player to player - holding hard drives hostage in the process - the computer of one powerful and dangerous man is infected, causing the carefully mediated violence of the on-line world to spill over into reality.</p>
+            <p>A fast-talking, internet-addicted mafia accountant is brutally silenced by his Russian employers, and Zula - a talented young T'Rain computer programmer - is abducted and bundled on to a private jet. As she is flown across the skies in the company of the terrified boyfriend she broke up with hours before, and a brilliant Hungarian hacker who may be her only hope, she finds herself sucked into a whirl of Chinese Secret Service agents and gun-toting American Survivalists; the Russian criminal underground and an al-Qaeda cell led by a charismatic Welshman; each a strand of a connected world that devastatingly converges in T'Rain.</p>
+            <h3>Opening</h3>
+            <p>Richard kept his head down. Not all those cow pies were frozen, and the ones that were could turn an ankle. He'd limited his baggage to a carry-on, so the size 11s weaving their way among the green-brown mounds were meshy black cross-trainers that you could practically fold in half and stuff into a pocket. Hi could have gone to Walmart this morning and bought boots. The reunion, however, would have noticed, and made much of, such an extravagance.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

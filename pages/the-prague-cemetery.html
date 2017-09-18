@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Prague Cemetery
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="umberto-eco">Emberto Eco</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Italian
+                    </li>
+                    <li>
+                        <b>published</b><br>2010
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>19th-century Europe—from Turin to Prague to Paris—abounds with the ghastly and the mysterious. Conspiracies rule history. Jesuits plot against Freemasons. Italian republicans strangle priests with their own intestines. French criminals plan bombings by day and celebrate Black Masses at night. Every nation has its own secret service, perpetrating forgeries, plots, and massacres. From the unification of Italy to the Paris Commune to the Dreyfus Affair to The Protocols of the Elders of Zion, Europe is in tumult and everyone needs a scapegoat. But what if, behind all of these conspiracies both real and imagined, lay one lone man? What if that evil genius created its most infamous document?</p>
+            <h3>Opening</h3>
+            <p>A passerby on that grey morning in March 1897, crossing at his own risk and peril, place Maubert or the Maub, as it was known in criminal circles (formerly a centre of university life in the Middle Ages when students flocked there from the Faculty of Arts in Vicus Stramineus or rue du Fouarre, and later a place of execution for apostles of free thought such as Etienne Dolet), would have found himself in one of the few spots in Paris spared from Baron Haussman's devastations, amidst a tangle of malodorous alleys, sliced in two by the course of Bièvre which still emerged here, folowing out from the bowels of the metropolis, where it had long been confined, before emptying feverish, gasping and verminous into the nearby Seine. From place Maubert, already scarred by boulevard Saint-Germain, a web of narrow lanes still branched off, such as Maître-Albert, rue Saint-Séverin, rue Galande, rue de la Bûcherie, rue Saint-Julien-la-Pauvre, as far as rue de la Huchette, littered with filthy hotels generally run by Auvergnat hoteliers of legendary cupidity, who demanded one franc for the first night and forty centimes thereafter (plus twenty sous if you wanted a sheet).</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
