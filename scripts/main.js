@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     $('aside #book-list ol li a').click(function () {
         var pageToLoad = $(this).attr('href');
-        $('article').load('/pages/' + pageToLoad + '.html');
+        $('article').load('pages/' + pageToLoad + '.html');
         return false;
     });
 
