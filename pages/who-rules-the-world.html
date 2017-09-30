@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Who Rules the World?
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="noam-chomsky">Noam Chomsky</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2016
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p><i>Who Rules the World?</i> is Noam Chomsky's rigorous examination of the dark currents underlying some of the major issues of our times. From the secret history of the US and Cuba to China's global ascent, from torture memos to sanctions on Iran, he explores how the United States's talk of freedom and human rights is often at odds with its actions. Delving deep into the conflicts in Iraq, Afghanistan and Israel / Palestine, he offers a terrifying picture of the inner and outer workings of moder-day imperial power.</p>
+            <h3>Opening</h3>
+            <p>Before thinking about the responsibility of intellectuals, it is worth clarifying to whom we are referring.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
