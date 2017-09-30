@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        A Storm of Swords
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="george-r-r-martin">George R. R. Martin</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2000
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Winter approaches Westeros like an angry beast.</p>
+            <p>The Seven Kingdoms are divided by revolt and blood feud. In the northern wastes, a horde of hungry, savage people steeped in the dark magic of the wilderness is poised to invade the Kingdom of the North where Robb Stark wears his new-forged crown. And Robb's defences are ranged against the South, the land of the cunning and cruel Lannisters, who have his young sisters in their power.</p>
+            <p>Throughout Westeros, the war for the Iron Throne rages more fiercely than ever, but if the wall is breached, no king will live to claim it.</p>
+            <h3>Opening</h3>
+            <p>The day was grey and bitter cold, and the dogs would not take the scent. The big black bitch had taken one sniff at the bear tracks, backed off, and skulked back to the pack with her tail between her legs. The dogs huddled together miserably on the riverbank as the wind snapped at them. Chett felt it too, biting through his layers of black wool and boiled leather. It was too bloody cold for man or beast, but here they were. His mouth twisted, and he almost could feel the boils that covered his cheeks and neck growing red and angry. 'I should be safe back at the Wall, tending the bloody ravens and making fires for old Maester Aemon'. It was the bastard Jon Snow who had taken that from him, him and his fat friend Sam Tarly. It was their fault he was here, freezing his bloody balls off with a pack of hounds deep in the haunted forest.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('/pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
