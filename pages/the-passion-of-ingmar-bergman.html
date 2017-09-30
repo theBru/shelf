@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Passion of Ingmar Bergman
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="frank-gado">Frank Gado</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1986
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Acknowledged as one of the greatest filmmakers of this or any other time, Bergman has with few exceptions written his own screenplays, an uncommon practice in the film industry, and for this practice critics refer to him as a "literary" filmmaker.</p>
+            <p>In this work, Gado examines virtually the entire range of Bergman's literary output. While treating the matter of the visual preentation fo Bergman's films, Gado concentrates on story and narrative and their relationship to Bergman's personal history.Gado concludes that whatever the outward appearance of Bergman's works, they contain an elementary psychic fantasy that links them all, revealing an artist who hoped to be a dramatist, "the new Strindberg," and who saw the camera as an extension of his pen.</p>
+            <h3>Opening</h3>
+            <p>"To make films," Bergman has repeatedly said, "is to plunge into the very depths of childhood." The fullest representation of that childhood occurs in "Fanny and Alexander", which he meant to be both a summation of four decades in cinema and a symbolic loop joining the grand, final expression of his art to the origins of the artist. With evident fascination, he re-creates there a sensitive boy's feelings of wonder as he watches the unfolding dramas of a Swedish clan similar to Bergman's own. To be sure, the Ekdahls in that film are not a direct transcription of the Bergmans, but young Alexander Ekdahl unmistakably corresponds to young Ingmarl and the family revels that the filmmaker depicts at great length evoke the warm memories of a period he has often described as happy and privileged.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
