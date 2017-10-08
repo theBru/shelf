@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        Snow Crash
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="neal-stephenson">Neal Stephenson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1992
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Enter the Metaverse - cyberspace home to avatars and software daemons, where anything and just about everything goes. Newly available on the Street - the Metaverse's main drag - is Snow Crash, a cyberdrug. Trouble is Snow Crash is also a computer virus - and something more. Because once taken it infects the person behind the avatar. Snow Crash bleeds into reality.</p>
+            <p>Which is really bad news for Hiro - freelance hacker and the Metaverse's best swordfighter (he wrote the code) - and Y. T. - skateboard kourier, street imp and mouthy teenage girl - because reality was shitty enough before someone started messing with it...</p>
+            <h3>Opening</h3>
+            <p>The Delivertaor belongs to an elite order, a hallowed subcategory. He's got espirit up to here. Right now, he's is preparing to carry out his third mission of the night. His uniform is black as activated charcoal, filtering the very light out of the air. A bullet will bounce off his arachnofiber weave like a wren hitting a patio door, but excess perspiration wafts through it like a breeze through a freshly napalmed forest. Where his body has bony extremities, the suit has sintered armorgel: feels like gritty jello, protects like a stack of telephone books.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

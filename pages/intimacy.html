@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Intimacy
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="hanif-kureishi">Hanif Kureishi</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1998
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Jay is leaving his partner and their two sons. As the long night before his departure unfolds he remembers the ups and downs of his relationship with Susan. In an unforgettable, and often pitiless, reflection of their time together he analyses the agonies and the joys of trying to make a life with another person.</p>
+            <h3>Opening</h3>
+            <p>It is the saddest night, for I am leaving and not coming back. Tomorrow morning, when the woman I have lived for six years has gone to work on her bicycle, and our children have been taken to the park with their ball, I will pack some things into a suitcase, slip out of my house hoping that no one will see me, and take the tube to Victor's place. There, for an unspecified period, I will sleep on the floor in the tiny room he has kindly offered me, next to the kitchen. Each morning I will heave the thin single mattress back to the airing cupboard. I will stuff the musty duvet into a box. I will replace the cushions on the sofa.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

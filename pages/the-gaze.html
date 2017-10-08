@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        The Gaze
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="elif-safak">Elif Şafak</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Turkish
+                    </li>
+                    <li>
+                        <b>published</b><br>2000
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>An overweight woman and her lover, a dwarf, are sick of being stared at wherever they go, and decide to reverse roles. The man goes out wearing make up, and the woman draws a moustache on her face.</p>
+            <p>The couple deal with the gaze of passers by in different ways. The woman wants to hide away from the world, while the man meets them head on, even compiling his own ‘Dictionary of the Gaze’ to show the powerful effects a simple look can have.</p>
+            <h3>Opening</h3>
+            <p>I was dreaming about a flying balloon. I couldn't make out the colour, but because the sky was charcoal-grey, and the clouds were snow-white, the sun was bright-yellow, it was definitely a colour other than charcoal-grey, snow-white or bright-yellow. The flying balloon in my dream existed for as long as I could see it, but ceased to exist the moment I couldn't.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
