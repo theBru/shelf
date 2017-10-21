@@ -27,6 +27,7 @@
         $('aside #book-list ol li a').click(function () {
             var pageToLoad = $(this).attr('href');
             $('article').load('pages/' + pageToLoad + '.html');
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
             return false;
         });
     });

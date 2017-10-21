@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Full Dark, No stars
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jonathan-franzen">Jonathan Franzen</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1992
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Louis Holland arrives in Boston in a spring of strange happenings - earthquakes strike the city, and the first one kills his grandmother. During a bitter feud over the inheritance Louis falls in love with Renee Seitchek, a passionate and brilliant seismologist, whose discoveries about the origin of the earthquakes complicate everything.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

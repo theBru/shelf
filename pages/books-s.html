@@ -33,6 +33,9 @@
         <a href="a-storm-of-swords"><span class="book-title">A Storm of Swords</span></a><br><span class="author">by <a href="george-r-r-martin">George R. R. Martin</a></span>
     </li>
     <li>
+        <a href="strong-motion"><span class="book-title">Strong Motion</span></a><br><span class="author">by <a href="jonathan-franzen">Jonathan Franzen</a></span>
+    </li>
+    <li>
         <a href="submission"><span class="book-title">Submission</span></a><br><span class="author">by <a href="michel-houellebecq">Michel Houellebecq</a></span>
     </li>
     <li>
@@ -46,6 +49,7 @@
         $('aside #book-list ol li a').click(function () {
             var pageToLoad = $(this).attr('href');
             $('article').load('pages/' + pageToLoad + '.html');
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
             return false;
         });
     });

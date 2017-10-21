@@ -20,6 +20,9 @@
     <li>
         <a href="freedom"><span class="book-title">Freedom</span></a><br><span class="author">by <a href="jonathan-franzen">Jonathan Franzen</a></span>
     </li>
+    <li>
+        <a href="full-dark-no-stars"><span class="book-title">Full Dark, No Stars</span></a><br><span class="author">by <a href="stephen-king">Stephen King</a></span>
+    </li>
 
 </ol>
 
@@ -28,6 +31,7 @@
         $('aside #book-list ol li a').click(function () {
             var pageToLoad = $(this).attr('href');
             $('article').load('pages/' + pageToLoad + '.html');
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
             return false;
         });
     });
