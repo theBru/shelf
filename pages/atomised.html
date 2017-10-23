@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Atomised
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="michel-houellebecq">Michel Houellebecq</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>1998
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Half-brothers Michel and Bruno have a mother in common but little else. Michel is a molecular biologist, a thinker and idealist, a man with no erotic life to speak of and little in the way of human society. Bruno, by contrast, is a libertine, though more in theory than in practice, his endless lust being all too rarely reciprocated. Both are symptomatic members of our atomised society, where religion has given way to shallow 'new age' philosophies and love to meaningless sexual connections. </p>
+            <h3>Opening</h3>
+            <p>The first of July fell on a Wednesday, so although it was a little unusual, Djerzinski organised his leaving drinks for Tuesday evening. Bottles of champagne nestled among containers of frozen embryos in the large Brandt refrigerator usually filled with chemicals.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        Platform
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="michel-houellebecq">Michel Houellebecq</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>2001
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Michel Renault is a human void. Following the death of the father he barely knew, he endures his civil service job while eking out an existence of prepackaged pleasure, hollow friendships, TV dinners, and pornography. On a group holiday in Thailand, however, he meets the shyly compelling Valérie, who soon pursues an agenda that Michel himself could never have thought possible: his own humanization.</p>
+            <p>Back in Paris, they plunge into an affair that strays into S&amp;M, public sex, and partner swapping, even as they devise a scheme to save Valérie's ailing travel company by capitalizing on the only trade Michel has seen flourish in the Third World. Before long, he quits his job, and their business model for 'sex tourism' is gradually implemented. But when they return to Thailand, where Michel's philosophy will be put into practice, he discovers that sex is neither the most consuming nor dangerous of passions...</p>
+            <h3>Opening</h3>
+            <p>Father died last year. I don't subscribe to the theory by which we only become truly adult when our parents die; we never become truly adult.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
