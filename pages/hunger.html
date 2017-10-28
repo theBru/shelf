@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Hunger
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="knut-hamsun">Knut Hamsun</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Norwegian
+                    </li>
+                    <li>
+                        <b>published</b><br>1890
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p><i>Hunger</i> is the story of a Norwegian artist who wanders the streets, struggling on the edge of starvation. As hunger overtakes him, he slides inexorably into paranoia and despair. The descent into madness is recounted by the unnamed narrator in increasingly urgent and disjointed prose, as he loses his grip on reality.</p>
+            <h3>Opening</h3>
+            <p>It was during the time I wandered about and starved in Christiania: Christiania, this singular city, from which no man departs without carrying away the traces of his sojourn there.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

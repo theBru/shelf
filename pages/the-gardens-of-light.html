@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        The Gardens of Light
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="amin-maalouf">Amin Maalouf</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>1991
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>This is the story of Mani, a forgotten figure, but whose name is yet, paradoxically, on everyone's lips.</p>
+            <p>When using the words "Manichean" or "Manichaeism" one rarely thinks Mani, painter, doctor and Eastern philosopher of the third century, called "the Buddha of Light" by the Chinese and "the apostle of Jesus" by the Egyptians . His tolerant and humanist philosophy wanted to reconcile the religions of his time. It earned him persecution, torment and hatred...</p>
+            <h3>Opening</h3>
+            <p>In contrast to the Nile, on which boats can drift downstream, borne by the current, or be carried upstream by the wind in their sails, the Tigris is a one-way river. In Mesopotamia the winds, like the waters, flow down from the mountains to the sea, never blowing inshore, with the result that, on their journeys downstream, boats have to be loaded with donkeys and mules which, on the return journey, will haul the chastened craft precariously along dry land back to their moorings in their home town.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

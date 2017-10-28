@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        The Rock of Tanios
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="amin-maalouf">Amin Maalouf</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>1993
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Tanios was a child of the mountains of Lebanon in the 1880s when the Egyptian Pashas were struggling against Ottoman domination and the British and French plotted with and against each other. Amin Maalouf's new novel, The Rock of Tanios, begins with a recollection of the rock on which Tanios was last seen sitting and weaves together the strands of the fascinating legend of his disappearance. Tanios was the illegitimate son of a powerful Sheik whose every action brought chaos into his village. When Tanios's adopted father caused the death of a powerful political rival, he and his son together fled their homeland. In hiding, they became entangled with international spies and politicians; Tanios soon took on the roll of intermediary between dueling European and Middle Eastern powers.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
