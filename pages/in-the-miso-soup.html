@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        In the Miso Soup
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ryu-murakami">Ryu Murakami</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Japanese
+                    </li>
+                    <li>
+                        <b>published</b><br>1997
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p><i>In the Miso Soup</i> tells of Frank, an overweight American tourist who has hired Kenji to take him on a guided tour of Tokyo's sleazy nightlife. But Frank's behavior is so strange that Kenji begins to entertain a horrible suspicionthat his new client is in fact the serial killer currently terrorizing the city. It is not until later, however, that Kenji learns exactly how much he has to fear and how irrevocably his encounter with this great white whale of an American will change his life.</p>
+            <h3>Opening</h3>
+            <p>My name is Kenji.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

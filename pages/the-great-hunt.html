@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Great Hunt [The Wheel of Time, #2]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="robert-jordan">Robert Jordan</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1990
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The Forsaken are loose, the Horn of Valere has been found and the Dead are rising from their dreamless sleep. The Prophecies are being fulfilled - but Rand al' Thor, the shepherd the Aes Sedai have proclaimed as the Dragon Reborn, desperately seeks to escape his destiny. </p>
+            <p>Rand cannot run forever. With every passing day the Dark One grows in strength and strives to shatter his ancient prison, to break the Wheel, to bring an end to Time and sunder the weave of the Pattern.</p>
+            <p>And the Pattern demands the Dragon.</p>
+            <h3>Opening</h3>
+            <p>The man who called himself Bors, at least in this place, sneered at the low murmuring that rolled around the vaulted chamber like the soft gabble of geese. His grimace was hidden by the black silk mask that covered his face, though, just like the masks the covered the hundred other faces in the chamber. A hundred black masks, and a hundred pairs of eyes trying to see what lay behind them.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

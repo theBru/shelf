@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Under the Dome
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2009
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>On an entirely normal, beautiful fall day in Chester's Mill, Maine, the town is inexplicably and suddenly sealed off from the rest of the world by an invisible force field. Planes crash into it and fall from the sky in flaming wreckage, a gardener's hand is severed as "the dome" comes down on it, people running errands in the neighboring town are divided from their families, and cars explode on impact. No one can fathom what this barrier is, where it came from, and when -- or if -- it will go away.</p>
+            <p>Dale Barbara, Iraq vet and now a short-order cook, finds himself teamed with a few intrepid citizens -- town newspaper owner Julia Shumway, a physician's assistant at the hospital, a select-woman, and three brave kids. Against them stands Big Jim Rennie, a politician who will stop at nothing -- even murder -- to hold the reins of power, and his son, who is keeping a horrible secret in a dark pantry. But their main adversary is the Dome itself. Because time isn't just short. It's running out.</p>
+            <h3>Opening</h3>
+            <p>For two thousand feet, where Claudette Saunders was taking a flying lesson, the town of Chester's Mill gleamed in the morning light like some freshly made and just set down. Cars trundled along Main Street, flashing up winks of sun. The steeple of the Congo Church looked sharp enough to pierce the unblemished sky. The sun raced along the surface of Prestile Stream as the Seneca V overflew it, both plane and water cutting the town on the same diagonal course.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

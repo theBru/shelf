@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Doors Open
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ian-rankin">Ian Rankin</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2008
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Mike Mackenzie is a self-made man with too much time on his hands and a bit of the devil in his soul. He is looking for something to liven up the days and perhaps give new meaning to his existence when a chance encounter offers him the opportunity to do just that. He is going to commit the perfect crime.</p>
+            <h3>Opening</h3>
+            <p>Mike saw it happen. There were two doors next to one another. One of them seemed to be permanently ajar by about an inch, except when someone pushed at its neighbour. As each liveried waiter brought trays of canapés into the saleroom, the effect was the same. One door would swing open, and the other would slowly close. It said a lot about the quality of the paintings, Mike thought, that he was paying more attention to a pair of doors. But he knew he was wrong: it was saying nothing about the actual artworks on display, and everything about him.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

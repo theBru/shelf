@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        The Passage [The Passage, #1]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="justin-cronin">Justin Cronin</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2010
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>First, the unthinkable: a security breach at a secret U.S. government facility unleashes the monstrous product of a chilling military experiment. Then, the unspeakable: a night of chaos and carnage gives way to sunrise on a nation, and ultimately a world, forever altered. All that remains for the stunned survivors is the long fight ahead and a future ruled by fear—of darkness, of death, of a fate far worse.</p>
+            <p>As civilization swiftly crumbles into a primal landscape of predators and prey, two people flee in search of sanctuary. FBI agent Brad Wolgast is a good man haunted by what he’s done in the line of duty. Six-year-old orphan Amy Harper Bellafonte is a refugee from the doomed scientific project that has triggered apocalypse. He is determined to protect her from the horror set loose by her captors. But for Amy, escaping the bloody fallout is only the beginning of a much longer odyssey—spanning miles and decades—towards the time and place where she must finish what should never have begun.</p>
+            <h3>Opening</h3>
+            <p>Before she became the Girl from Nowhere - the One Who Walked In, the First and Last Only, who lived a thousand years - she was just a little girl in Iowa, named Amy. Amy Harper Bellafonte.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

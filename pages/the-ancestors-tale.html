@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Ancestor's Tale: A Pilgrimage to the Dawn of Evolution
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="richard-dawkins">Richard Dawkins</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2004
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The renowned biologist and thinker Richard Dawkins presents his most expansive work yet: a comprehensive look at evolution, ranging from the latest developments in the field to his own provocative views. Loosely based on the form of Chaucer's Canterbury Tales, Dawkins's Tale takes us modern humans back through four billion years of life on our planet. As the pilgrimage progresses, we join with other organisms at the forty "rendezvous points" where we find a common ancestor. The band of pilgrims swells into a vast crowd as we join first with other primates, then with other mammals, and so on back to the first primordial organism.</p>
+            <h3>Opening</h3>
+            <p>History has been described as one damn thing after another. The remark can be seen as a warning against a pair of temptations but, duly warned, I shall cautiously flirt with both. First, the historian is tempted to scour the past for patterns that repeat themselves; or at least, following Mark Twain, to seek reason and rhyme for everything. This appetite for pattern affronts those who insist that, as Mark Twain will also be found to have said, "History is usually a random, messy affair", going nowhere and following no rules. The second connected temptation is the vanity of the present: of seeing th past as aimed at our own time, as though the characters in history's play had nothing better to do with their lives than foreshadow us.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

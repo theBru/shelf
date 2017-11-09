@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Leo the African
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="amin-maalouf">Amin Maalouf</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>1986
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Exile and pilgrimage, the power of sexual love and family bonds, the savagery of war, and the profundity of religious passions are masterfully evoked in this tale of one man's journey, set against the splendor of the Renaissance and the vast tapestry of Muslim and Christian empires.</p>
+            <h3>Opening</h3>
+            <p>I, Hasan the son of Muhammad the weigh-master, I, Jean-Leon de Medici, circumcised at the hand of a barber and baptised at the hand of a pope, I am now called the African, but I am not from Africa, nor from Europe, nor from Arabia. I am also called the Granadan, the Fassi, the Zayyati, but I come from no country, from no city, no tribe. I am the son of the road, my country is the caravan, the life the most unexpected of voyages.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
