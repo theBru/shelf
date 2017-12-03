@@ -1,0 +1,36 @@
+<section>
+    <h2>
+        Naomi Klein
+    </h2>
+    <div class="author-main">
+        <div class="author-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>born</b><br>8 May 1970 (Canada)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-section main">
+            <h3>Bibliography on Shelf</h3>
+            <ul>
+                <li><a href="the-grace-of-kings">No Is Not Enough - Defeating the New Shock Politics</a> (2017)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
