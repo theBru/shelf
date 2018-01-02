@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Almost Transparent Blue
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ryu-murakami">Ryu Murakami</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Japanese
+                    </li>
+                    <li>
+                        <b>published</b><br>1976
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Almost Transparent Blue is a brutal tale of lost youth in a Japanese port town close to an American military base. Murakami's image-intensive narrative paints a portrait of a group of friends locked in a destructive cycle of sex, drugs and rock'n'roll. The novel is all but plotless, but the raw and often violent prose takes us on a rollercoaster ride through reality and hallucination, highs and lows, in which the characters and their experiences come vividly to life. Trapped in passivity, they gain neither passion nor pleasure from their adventures. Yet out of the alienation, boredom and underlying rage and grief emerges a strangely quiet and almost equally shocking beauty.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

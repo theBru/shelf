@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Pride and Prejudice and Zombies (Pride and Prejudice and Zombies, #1)
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="seth-grahame-smith">Seth Grahame-Smith</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2009
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>As our story opens, a mysterious plague has fallen upon the quiet English village of Meryton—and the dead are returning to life! Feisty heroine Elizabeth Bennet is determined to wipe out the zombie menace, but she’s soon distracted by the arrival of the haughty and arrogant Mr. Darcy. What ensues is a delightful comedy of manners with plenty of civilized sparring between the two young lovers—and even more violent sparring on the blood-soaked battlefield. Can Elizabeth vanquish the spawn of Satan? And overcome the social prejudices of the class-conscious landed gentry?</p>
+            <h3>Opening</h3>
+            <p>It is a truth universally acknowledged that a zombie in possession of brains must be in want of more brains. Never was this truth more plain than during the recent attacks at Netherfield Park, in which a household of eighteen was slaughtered and consumed by a horde of the living dead.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

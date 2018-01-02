@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        The Eye of the World [The Wheel of Time, #1]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="robert-jordan">Robert Jordan</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1990
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The Wheel of Time turns and Ages come and pass, leaving memories that become legend. Legend fades to myth and even myth is long forgotten when the Age that gave it birth returns again. But one truth remains, and what mortal men forget, the Aes Sedai do not...</p>
+            <p>What was, what will be, and what is, may yet fall under the shadow.</p>
+            <h3>Opening</h3>
+            <p>The Wheel of Time turns, and Ages come and pass, leaving memories that become legend. Legends fade to myth, and even myth is long forgotten when the Age that gave it birth comes again. In one Age, called the Third Age by some, an Age yet to come, and Age long past, a wind rose in the Mountains of Mist. The wind was not the beginning. There are neither beginnings nor endings to the turninng of the Wheel of Time. But it was a beginning.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

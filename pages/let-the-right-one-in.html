@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Let the Right One in
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="john-ajvide-lindqvist">John Ajvide Lindqvist</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Swedish
+                    </li>
+                    <li>
+                        <b>published</b><br>2004
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>It is autumn 1981 when the inconceivable comes to Blackeberg, a suburb in Sweden. The body of a teenage boy is found, emptied of blood, the murder rumored to be part of a ritual killing. Twelve-year-old Oskar is personally hoping that revenge has come at long last—revenge for the bullying he endures at school, day after day.</p>
+            <p>But the murder is not the most important thing on his mind. A new girl has moved in next door—a girl who has never seen a Rubik’s Cube before, but who can solve it at once. There is something wrong with her, though, something odd. And she only comes out at night...</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

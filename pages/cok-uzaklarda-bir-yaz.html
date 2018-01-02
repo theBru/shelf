@@ -1,0 +1,39 @@
+<section>
+    <h2>
+        Çok Uzaklarda Bir Yaz
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="mehmet-acar">Mehmet Açar</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Turkish
+                    </li>
+                    <li>
+                        <b>published</b><br>2009
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
