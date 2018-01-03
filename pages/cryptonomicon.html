@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        Cryptonomicon
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="neal-stephenson">Neal Stephenson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1999
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Cryptonomicon zooms all over the world, careening conspiratorially back and forth between two time periods--World War II and the present. Our 1940s heroes are the brilliant mathematician Lawrence Waterhouse, crypt analyst extraordinaire, and gung-ho, morphine-addicted marine Bobby Shaftoe. They're part of Detachment 2702, an Allied group trying to break Axis communication codes while simultaneously preventing the enemy from figuring out that their codes have been broken. Their job boils down to layer upon layer of deception. Dr. Alan Turing is also a member of 2702, and he explains the unit's strange workings to Waterhouse.</p>
+            <p>All of this secrecy resonates in the present-day story line, in which the grandchildren of the WWII heroes--inimitable programming geek Randy Waterhouse and the lovely and powerful Amy Shaftoe--team up to help create an offshore data haven in Southeast Asia and maybe uncover some gold once destined for Nazi coffers. To top off the paranoiac tone of the book, the mysterious Enoch Root, key member of Detachment 2702 and the Societas Eruditorum, pops up with an unbreakable encryption scheme left over from WWII to befuddle the 1990s protagonists with conspiratorial ties.</p>
+            <h3>Opening</h3>
+            <p>... is the best that Corporal Bobby Shaftoe can do on short notice - he's standing on the running board, gripping his Springfield with one hand and the rearview mirror with the other, so counting the syllables on his fingers is out of thr question. Is "tires" one syllable or two? How about "wail"?The truck finally makes up its mind not to tip over, and thuds back onto four wheels. The wail - and the moment - are lost. Bobby can still hear the coolies singing, though, and now too there's the gunlike snicking of the truck's clutch linkage as Private Wiley downshifts. Could Wiley be losing his nerve? And, in the back, under the tarps, a ton and a half of file cabinets clanking, code books slaloming, fuel spanking the tanks of Station Alpha's electrical generator. The moder world's hell on haiku writers: "Electrical generator" is, what, eight syllables? You couldn't even fit that onto the second line!</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

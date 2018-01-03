@@ -1,0 +1,41 @@
+<section>
+    <h2>
+        The Aleph and Other Stories
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jorge-luis-borges">Jorge Luis Borges</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Castilian
+                    </li>
+                    <li>
+                        <b>published</b><br>1949
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Full of philosophical puzzles and supernatural surprises, these stories contain some of Borges’s most fully realized human characters. With uncanny insight he takes us inside the minds of an unrepentant Nazi, an imprisoned Mayan priest, fanatical Christian theologians, a woman plotting vengeance on her father’s “killer,” and a man awaiting his assassin in a Buenos Aires guest house.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

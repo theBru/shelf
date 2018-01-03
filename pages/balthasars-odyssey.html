@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        Balthasar's Odyssey
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="amin-maalouf">Amin Maalouf</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>2000
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Before the dawn of the apocalyptic 'Year of the Beast' in 1666, Balthasar Embriaco, a Genoese Levantine merchant, sets out on an adventure that will take him across the breadth of the civilised world, from Constantinople, through the Mediterranean, to London shortly before the Great Fire.</p>
+            <p>Balthasar's urgent quest is to track down a copy of one of the rarest and most coveted books ever printed, a volume called 'The Hundredth Name', its contents are thought to be of vital importance to the future of the world. There are ninety-nine names for God in the Koran, and merely to know this most secret hundredth name will, Balthasar believes, ensure his salvation.</p>
+            <h3>Opening</h3>
+            <p>Still four months until the Year of the Beast, and it's already here. Its shadow dims our hearts and the windows of our houses.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

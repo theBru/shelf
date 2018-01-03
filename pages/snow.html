@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Snow
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="orhan-pamuk">Orhan Pamuk</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Turkish
+                    </li>
+                    <li>
+                        <b>published</b><br>2002
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Following years of lonely political exile in Western Europe, Ka, a middle-aged poet, returns to Istanbul to attend his mother's funeral. Only partly recognizing this place of his cultured, middle-class youth, he is even more disoriented by news of strange events in the wider country: a wave of suicides among girls forbidden to wear their head scarves at school. An apparent thaw of his writer's curiosity–a frozen sea these many years–leads him to Kars, a far-off town near the Russian border and the epicenter of the suicides.</p>
+            <p>No sooner has he arrived, however, than we discover that Ka's motivations are not purely journalistic; for in Kars, once a province of Ottoman and then Russian glory, now a cultural gray-zone of poverty and paralysis, there is also Ipek, a radiant friend of Ka's youth, lately divorced, whom he has never forgotten. As a snowstorm, the fiercest in memory, descends on the town and seals it off from the modern, westernized world that has always been Ka's frame of reference, he finds himself drawn in unexpected directions: not only headlong toward the unknowable Ipek and the desperate hope for love–or at least a wife–that she embodies, but also into the maelstrom of a military coup staged to restrain the local Islamist radicals, and even toward God, whose existence Ka has never before allowed himself to contemplate. In this surreal confluence of emotion and spectacle, Ka begins to tap his dormant creative powers, producing poem after poem in untimely, irresistible bursts of inspiration. But not until the snows have melted and the political violence has run its bloody course will Ka discover the fate of his bid to seize a last chance for happiness.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

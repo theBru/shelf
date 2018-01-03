@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Running with Scissors
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="augusten-burroughs">Augusten Burroughs</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2002
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The true story of an outlaw childhood where rules were unheard of, the Christmas tree stayed up all year round, Valium was consumed like candy, and if things got dull an electroshock-therapy machine could provide entertainment.</p>
+            <h3>Opening</h3>
+            <p>My mother is standing in front of the bathroom mirror smelling polished and ready; like Jean Naté, Dippity Do and the waxy sweetness of lipstick. Her white, handgun-shaped blow-dryer is lying on top of the wicker clothes hamper, ticking as it cools. She stands back and smoothes her hands down the front of her swirling, psychedelic Pucci dress, biting inside of her cheek.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

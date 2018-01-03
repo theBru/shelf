@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Madame Bovary
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="gustave-flaubert">Gustave Flaubert</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>1857
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Emma Bovary is beautiful and bored, trapped in her marriage to a mediocre doctor and stifled by the banality of provincial life. An ardent devourer of sentimental novels, she longs for passion and seeks escape in fantasies of high romance, in voracious spending and, eventually, in adultery. But even her affairs bring her disappointment, and when real life continues to fail to live up to her romantic expectations, the consequences are devastating.</p>
+            <h3>Opening</h3>
+            <p>We were at prep, when the Head came in, followed by a new boy not in uniform and a school-servant carrying a big desk. Those who had been asleep woke up, and every boy rose to his feet as though surprised in his labours.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
