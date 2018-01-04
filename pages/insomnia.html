@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Insomnia
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1994
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Ralph Roberts hasn't been sleeping well lately. Every morning he wakes just a little bit earlier until pretty soon, he isn't sleeping at all. It wouldn't be so bad if not for the strange hallucinations - and the nightmares that keep coming to life.</p>
+            <h3>Opening</h3>
+            <p>No one - least of all Dr Litchfield - came right out and told Ralph Roberts that his wife was going to die, but there came a time when Ralph understood without needing to be told. The months between March and June were a jangling, screaming time inside his head - a time for conferences with doctors, of evening runs to the hospital with Carolyn, of trips to other hospitals in other states for special tests (Ralph spent much of his travel time on these trips thanking God for Carolyn's Blue Cross / Major Medical coverage), of personal research in the Derry Public Library, at first looking for answers the specialists might have overlooked, later on just looking for hope and grasping at straws.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

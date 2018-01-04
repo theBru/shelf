@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        The Grapes of Wrath
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="john-steinbeck">John Steinbeck</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1939
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>First published in 1939, Steinbeck’s Pulitzer Prize winning epic of the Great Depression chronicles the Dust Bowl migration of the 1930s and tells the story of one Oklahoma farm family, the Joads, driven from their homestead and forced to travel west to the promised land of California. Out of their trials and their repeated collisions against the hard realities of an America divided into haves and have-nots evolves a drama that is intensely human yet majestic in its scale and moral vision, elemental yet plainspoken, tragic but ultimately stirring in its human dignity.</p>
+            <h3>Opening</h3>
+            <p>To the red country and part of the gray country of Oklahoma, the last rains came gently, and they did not cut the scarred earth. The plows crossed and recrossed the rivulet marks. The last rains lifted the corn quickly and scattered weed colonies and grass along the sides of the roads so that the gray country and the dark red country began to disappear under a green cover. In the last part of May the sky grew pale and the clouds that had hung in high puffs for so long in the spring were dissipated. The sun flared down on the growing corn day after day until a line of brown spread along the edge of each green bayonet. The clouds appeared, and went away, and in a while they did not try any more. The weeds grew darker green to protect themselves, and they did not spread any more. The surface of the earth crusted, a thin hard crust, and as the sky became pale, so the earth became pale, pink in the red country and white in the gray country.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

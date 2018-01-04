@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        World without End [Kingsbridge, #2]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ken-follett">Ken Follett</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2007
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>On the day after Halloween, in the year 1327, four children slip away from the cathedral city of Kingsbridge. They are a thief, a bully, a boy genius and a girl who wants to be a doctor. In the forest they see two men killed.</p>
+            <p>As adults, their lives will be braided together by ambition, love, greed and revenge. They will see prosperity and famine, plague and war. One boy will travel the world but come home in the end; the other will be a powerful, corrupt nobleman. One girl will defy the might of the medieval church; the other will pursue an impossible love. And always they will live under the long shadow of the unexplained killing they witnessed on that fateful childhood day.</p>
+            <h3>Opening</h3>
+            <p>Gwenda was eight years old, but she was not afraid of the dark.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Samarkand
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="amin-maalouf">Amin Maalouf</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>French
+                    </li>
+                    <li>
+                        <b>published</b><br>1988
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Accused of mocking the inviolate codes of Islam, the Persian poet and sage Omar Khayyam fortuitously finds sympathy with the very man who is to judge his alleged crimes. Recognising genuis, the judge decides to spare him and gives him instead a small, blank book, encouraging him to confine his thoughts to it alone.</p>
+            <h3>Opening</h3>
+            <p>Sometimes in Samarkand, in the evening of a slow and dreary day, city dwellers would come to while the time away at the dead-end Street of Two Taverns, near the pepper market. They came not to taste the musky wine of Soghdia but to watch the comings and goings or to waylay a carouser who would then be forced down into the dust, showered with insults, and cursed into a hell whose fire, until the end of all time, would recall the ruddiness of the wine's enticements.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
