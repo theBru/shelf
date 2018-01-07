@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Cell
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2006
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Mobile phones deliver the apocalypse to millions of unsuspecting humans by wiping their brains of any humanity, leaving only aggressive and destructive impulses behind. Those without cell phones, like illustrator Clayton Riddell and his small band of "normies," must fight for survival, and their journey to find Clayton's estranged wife and young son rockets the book toward resolution.</p>
+            <h3>Opening</h3>
+            <p>The event that came to be known as The Pulse began at 3:03 p.m., eastern standard time, on the afternoon of October 1. The term was a misnomer, of course, but within ten hours of the event, most of the scientists capable of pointing this out were either dead or insane. The name hardly mattered, in any case. What mattered was the effect.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

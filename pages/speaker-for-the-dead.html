@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Speaker for the Dead [Ender Saga, #2]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="orson-scott-card">Orson Scott Card</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1986
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>In the aftermath of his terrible war, Ender Wiggin disappeared, and a powerful voice arose: the Speaker for the Dead, who told of the true story of the Bugger War.</p>
+            <p>Now long years later, a second alien race has been discovered, but again the aliens’ ways are strange and frightening…again, humans die. And it is only the Speaker for the Dead, who is also Ender Wiggin the Xenocide, who has the courage to confront the mystery…and the truth.</p>
+            <h3>Opening</h3>
+            <p>In the year 1830, after the formation of Starway Congress, a robot scout ship sent a report by ansible: The Planet it was investigating was well within the parametres for human life. The nearest planet with any kind of population pressure was Baia; Starways Congress granted them the expedition license.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

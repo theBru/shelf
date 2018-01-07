@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Jane Eyre
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="charlotte-bronte">Charlotte Brontë</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1847
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Jane Eyre is the heart-wrenching story of a young girl saddled with both a cruel aunt and a bitter upbringing at Lowood School. Her soul not broken from these encounters, she becomes governess to the children of the handsome Mr. Rochester, with whom she falls deeply in love, but the dark secrets of Rochester's past and outside influence threaten to swallow their budding romance.</p>
+            <h3>Opening</h3>
+            <p>There was no possibility of taking a walk that day. We had been wandering indeed, in the leafless shrubbery an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further outdoor exercise was now out of the question.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

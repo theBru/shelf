@@ -1,0 +1,41 @@
+<section>
+    <h2>
+        Los funerales de la Mamá Grande 
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="gabriel-garcia-marquez">Gabriel García Márquez</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Castilian
+                    </li>
+                    <li>
+                        <b>published</b><br>1962
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>En Los funerales de la Mamá Grande (1962) se reunen siete cuentos y la novela corta que da titulo al volumen, en la que se narran las fastuosas exequias de esa mujer muerta en olor de santidad a los noventa y dos anos de edad, autentica soberana de Macondo.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Accordion Crimes
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="annie-proulx">Annie Proulx</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1996
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Accordion Crimes spans a century and a continent. The novel illuminates the lives of the founders of the U.S.A., descendants of Mexicans, Poles, Irish, etc., all linked by the accordian.</p>
+            <h3>Opening</h3>
+            <p>It was as if his eye were an ear and a crackle went through it each time he shot a look at the accordion. The instrument rested on the bench, lacquer gleaming like wet sap. Rivulets of light washed mother-of-pearl, the nineteen polished bone buttons, winked a pair of small oval mirrors rimmed in black paint, eyes seeking eyes, seeking the posionous stare of anyone who possessed malocchio, eager to reflect the bitter glance back at the glancer.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
