@@ -1,0 +1,41 @@
+<section>
+    <h2>
+        A History of Britain in 21 Women
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jenni-murray">Jenni Murray</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2016
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>They were famous queens, unrecognised visionaries, great artists and trailblazing politicians. They all pushed back boundaries and revolutionised our world. Jenni Murray presents the history of Britain as you've never seen it before, through the lives of twenty-one women who refused to succumb to the established laws of society, whose lives embodied hope and change, and who still have the power to inspire us today.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
