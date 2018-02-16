@@ -62,7 +62,7 @@ aside {
         color: $primary-color;
     }
     & .book-title {
-        @include header-font(1.8em);
+        @include condensed-font(1.6em);
         line-height: 1.5em;
     }
     & .author {
