@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Coin Locker Babies
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ryu-murakami">Ryu Murakami</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Japanese
+                    </li>
+                    <li>
+                        <b>published</b><br>1980
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Abandoned at birth in adjacent train station lockers, two troubled boys spend their youth in an orphanage and with foster parents on a semi-deserted island before finally setting off for the city to find and destroy the women who first rejected them. Both are drawn to an area of freaks and hustlers called Toxitown. One becomes a bisexual rock singer, star of this exotic demimonde, while the other, a pole vaulter, seeks his revenge in the company of his girlfriend, Anemone, a model who has converted her condominium into a tropical swamp for her pet crocodile.</p>
+            <p>Together and apart, their journey from a hot metal box to a stunning, savage climax is a brutal funhouse ride through the eerie landscape of late-twentieth-century Japan.</p>
+            <h3>Opening</h3>
+            <p>The woman pushed on the baby's stomach and sucked its penis into her mouth; it was thinner than the American menthols she smoked and a bit slimy, like raw fish. She was testing to see if the baby would cry, but the little arms and legs were still, so she peeled away the plastic wrapping over its face. She lined a cardboard box with towels, laid the baby inside, and taped the box shut. Then she tied it with string and wrote a made-up name and address on the side in big print.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

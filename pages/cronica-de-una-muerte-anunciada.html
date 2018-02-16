@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Crónica de una muerte anunciada
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="gabriel-garcia-marquez">Gabriel García Márquez</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Castilian
+                    </li>
+                    <li>
+                        <b>published</b><br>1981
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Es la historia de un hombre que va a ser asesinado, y a diferencia del resto del pueblo, él no lo sabe.</p>
+            <h3>Opening</h3>
+            <p>El día en que lo iban a matar, Santiago Nasar se levantó a las 5:30 de la mañana para esperar el buque en que llegaba el obispo. Había soñado que atravesaba un bosque de higuerones donde caía una llovizna tierna, y por un instante fue feliz el sueño, pero al despertar se sintió por completo salpicado de cagada de pájaros. "Siempre soñaba con árboles," me dijo Plácida Linero, su madre, evocando vientisiete años después de los pormenores de aquel lunes ingrato. "La semana anterior había soñado que iba solo en un avión de papel de estaño que volaba sin tropezar por entre los almendros," me dijo. Tenía una reputacioón muy bien ganada de intérprete certera de los sueños ajenos, siempre que se los contaran en ayunas, pero no había advertido ningún augurio aciago en esos dos sueños de su hijo, ni en los otros sueños cor árboles que eél le había contado en las mañanas que precedieron a su muerte.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
