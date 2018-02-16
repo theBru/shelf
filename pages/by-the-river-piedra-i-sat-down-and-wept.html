@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        By the River Piedra I Sat Down and Wept
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="paolo-coelho">Paulo Coelho</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Portguese
+                    </li>
+                    <li>
+                        <b>published</b><br>1994
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Rarely does adolescent love reach its full potential, but what happens when two young lovers reunite after eleven years? Time has transformed Pilar into a strong and independent woman, while her devoted childhood friend has grown into a handsome and charismatic spiritual leader. She has learned well how to bury her feelings... and he has turned to religion as a refuge from his raging inner conflicts.</p>
+            <p>Now they are together once again, embarking on a journey fraught with difficulties, as long-buried demons of blame and resentment resurface after more than a decade. But in a small village in the French Pyrenees, by the waters of the River Piedra, a most special relationship will be reexamined in the dazzling light of some of life’s biggest questions.</p>   
+            <h3>Opening</h3>
+            <p>The place where the conference was held was more formal than I had imagined it, and there were more people there than I had expected. How had all this come about?</p>     
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

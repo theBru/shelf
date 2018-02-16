@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Castle of Crossed Destinies
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="italo-calvino">Italo Calvino</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Italian
+                    </li>
+                    <li>
+                        <b>published</b><br>1973
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>A group of travellers chance to meet, first in a castle, then a tavern. Their powers of speech are magically taken from them and instead they have only tarot cards with which to tell their stories. What follows is an exquisite interlinking of narratives, and a fantastic, surreal and chaotic history of all human consciousness.</p>   
+            <h3>Opening</h3>
+            <p>In the midst of a thick forest, there was a castle that gave shelter to all travellers overtaken by night on their journey: lords and ladies, royalty and their retinue, humble wayfarers.</p>     
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
