@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Blind Assassin
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="margaret-atwood">Margaret Atwood</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2000
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>"Ten days after the war ended, my sister drove a car off the bridge." They are spoken by Iris, whose terse account of her sister Laura's death in 1945 is followed by an inquest report proclaiming the death accidental. But just as the reader expects to settle into Laura's story, Atwood introduces a novel-within-a- novel. Entitled The Blind Assassin, it is a science fiction story told by two unnamed lovers who meet in dingy backstreet rooms. When we return to Iris, it is through a 1947 newspaper article announcing the discovery of a sailboat carrying the dead body of her husband, a distinguished industrialist.</p>
+            <h3>Opening</h3>
+            <p>Ten days after the war ended, my sister Laura drove a car off a bridge. The bridge was being repaired: she went right through the Danger sign. The car fell a hundred feet into the ravine, smashing through the treetops feathery with new leaves, then burst into flames and rolled down into the shallow creek at the bottom. Chunks of the bridge fell on top of it. Nothing much was left of her but charred smithereens.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Bell Jar
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="sylvia-plath">Sylvia Plath</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1963
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Esther Greenwood is brilliant, beautiful, enormously talented, and successful, but slowly going under—maybe for the last time.</p>
+            <h3>Opening</h3>
+            <p>It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn't know what I was doing in New York. I'm stupid about executions. The idea of being electrocuted makes me sick, and that's all there was to read about in the papers -- goggle-eyed headlines staring up at me on every street corner and at the fusty, peanut-smelling mouth of every subway. It had nothing to do with me, but I couldn't help wondering what it would be like, being burned alive all along your nerves.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

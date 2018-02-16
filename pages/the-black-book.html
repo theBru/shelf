@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        The Black Book
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="orhan-pamuk">Orhan Pamuk</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Turkish
+                    </li>
+                    <li>
+                        <b>published</b><br>1990
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Galip is a lawyer living in Istanbul. His wife, the detective novel–loving Ruya, has disappeared. Could she have left him for her ex-husband or Celâl, a popular newspaper columnist? But Celâl, too, seems to have vanished. As Galip investigates, he finds himself assuming the enviable Celâl's identity, wearing his clothes, answering his phone calls, even writing his columns. Galip pursues every conceivable clue, but the nature of the mystery keeps changing, and when he receives a death threat, he begins to fear the worst.</p>
+            <h3>Opening</h3>
+            <p>Rüya slept on her stomach in the sweet and warm darkness under the blue-checkered quilt which covered the entire bed with its undulating, shadowy valleys and soft blue hills. The first sounds of the winter morning penetrated the room: carts passing by sporadically and old buses, the salep maker, who was in cahoots with the pastry man, banging his copper jugs up and down on the sidewalk, the whistle of the shill and the dolmus stop. The navy-blue drapes leached out the leaden winter light that came into the room. Galip, languid with sleep, studied his wife's head which poked out of the quilt: Rüya's chin was buried in the down pillow. In the curve of her brow there was something surreal that brought an anxious curiosity about the wondrous events that took place inside her head. "Memory," Jelal had written in one of his columns, "is a garden." Then Galip had thought: Gardens of Rüya, Gardens of Dreaming. Don't think, don't think! If you do, you will suffer jealousy. But Galip couldn't help thinking as he studied his wife's brow.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

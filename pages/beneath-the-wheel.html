@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Beneath the Wheel
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="hermann-hesse">Hermann Hesse</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>German
+                    </li>
+                    <li>
+                        <b>published</b><br>1906
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Hans Giebenrath lives among the dull and respectable townsfolk of a sleepy Black Forest village. When he is discovered to be an exceptionally gifted student, the entire community presses him onto a path of serious scholarship. Hans dutifully follows the regimen of study and endless examinations, his success rewarded only with more crushing assignments. When Hans befriends a rebellious young poet, he begins to imagine other possibilities outside the narrowly circumscribed world of the academy. Finally sent home after a nervous breakdown, Hans is revived by nature and romance, and vows never to return to the gray conformity of the academic system.</p>
+            <h3>Opening</h3>
+            <p>Herr Joseph Giebernath, jobber and middleman, possessed no laudable or peculiar traits distinguishing him from his fellow townsmen. Like the majority, he wass endowed with a sturdy and healthy body, a knack for business and an unabashed, heartfelt veneration of money; not to mention a small house and garden, a family plot in the cemetery, a more or less enlightened if threadbare attachment to the church, an appropriate respect for God and the authorities, and blind submission to the inflexible laws of bourgeois respectability. Though no teetotaler, he never drank to excess; though engaged in more than one questionable deal, he never transgressed the limits of what was legally permitted. He despised those poorer than himself as have-nots and those wealthier as show-offs. He belonged to the Chamber of Commerce and every Friday went bowling at the Eagle. He smoked only cheap cigars, reserving a better brand for after-dinner and Sundays.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
