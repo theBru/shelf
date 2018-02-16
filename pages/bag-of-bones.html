@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Bag of Bones
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1998
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Four years after the sudden death of his wife, forty-year-old bestselling novelist Mike Noonan is still grieving. Unable to write, and plagued by vivid nightmares set at the western Maine summerhouse he calls Sara Laughs, Mike reluctantly returns to the lakeside getaway. There, he finds his beloved Yankee town held in the grip of a powerful millionaire, Max Devore, whose vindictive purpose is to take his three-year-old granddaughter, Kyra, away from her widowed young mother, Mattie. As Mike is drawn into Mattie and Kyra's struggle, as he falls in love with both of them, he is also drawn into the mystery of Sara Laughs, now the site of ghostly visitations and escalating terrors. What are the forces that have been unleashed here—and what do they want of Mike Noonan?</p>
+            <h3>Opening</h3>
+            <p>On a very hot day of August of 1994, my wife told me she was going down to the Derry Rite Aid to pick up a refill on her sinus medicine prescription -- this is stuff you can buy over the counter these days, I believe. I'd finished my writing for the day and offered to pick it up for her. She said thanks, but she wanted to get a piece of fish at the supermarket next door, anyway; two birds with one stone and all of that. She blew a kiss at me off the palm of her hand and went out. The next time I saw her, she was on TV. That's how you identify the dead here in Derry -- no walking down a subterranean corridor with green tiles on the walls and long fluorescent bars overhead, no naked body rolling out of a chilly drawer on casters; you just go into an office marked PRIVATE and look at a TV screen and say yep or nope.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

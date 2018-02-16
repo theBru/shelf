@@ -10,6 +10,8 @@ header {
     width: 100vw;
     background-color: darken($primary-color, 2%);
     line-height: 5vh;
+    position: fixed;
+    z-index: 1000;
     & h1 {
         padding-left: $h-unit;
     }
@@ -24,14 +26,15 @@ nav li {
 }
 
 main {
-    @include flex-grid(space-between);  
+    @include flex-grid(space-between);
+    padding-top: 5vh;  
 }
 
 article {
     margin-top: $v-unit / 2;
     width: 75%;
     padding: 0 $h-unit;
-    height: 95vh;
+    height: 100%;
     & .meta-card ul {
         @include flex-grid(space-start);
         & li {
@@ -53,7 +56,9 @@ article {
 aside {
     padding: $v-unit / 2 $h-unit;
     width: 25%;
-    height: 100%;
+    height: 95vh;
+    overflow-y: auto;
+    border-bottom: 1px solid #eee;
     /*min-height: 95vh;*/
     & li {
         margin-bottom: $v-unit/3;

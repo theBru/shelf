@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        The Age of Magic
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ben-okri">Ben Okri</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2014
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>A tightly knit group of filmmakers travel from Paris together to make a documentary. Unknown to themselves they carry a lot of unwanted baggage - fear, anger, jealousy, love.</p>
+            <p>When they arrive in an idyllic Swiss village ringed by mountains and reflected in a lake, they discover a haunted world that will compel them to confront the demons they have been trying to escape.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

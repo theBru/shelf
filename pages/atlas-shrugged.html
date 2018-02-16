@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        Atlas Shrugged
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ayn-rand">Ayn Rand</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1957
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Set in a near-future U.S.A. whose economy is collapsing as a result of the mysterious disappearance of leading innovators and industrialists, this novel presents an astounding panorama of human life-from the productive genius who becomes a worthless playboy...to the great steel industrialist who does not know that he is working for his own destruction...to the philosopher who becomes a pirate...to the woman who runs a transcontinental railroad...to the lowest track worker in her train tunnels.</p>
+            <h3>Opening</h3>
+            <p>"Who is John Galt?"</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

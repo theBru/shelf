@@ -34,7 +34,7 @@ article {
         }
     }
     & h3 {
-        @include header-font(2.5em);
+        @include condensed-font(2.5em);
         margin: $v-unit 0 $v-unit/2 0;
     }
     & p {
