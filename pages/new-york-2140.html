@@ -1,0 +1,46 @@
+<section>
+    <h2>
+        New York 2140
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="kim-stanley-robinson">Kim Stanley Robinson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2017
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>As the sea level rose, every street became a canal. Every skyscraper an island. For the residents of one apartment building in Madison Square, however, New York in the year 2140 is far from a drowned city.</p>
+            <p>There is the market trader, who finds opportunities where others find trouble. There is the detective, whose work will never disappear - along with the lawyer's, of course.</p>
+            <p>There is the internet star, beloved by millions for her airship adventures, and the building's manager, quietly respected for his attention to detail. Then there are two boys who don't live there, but have no other home - and who are motr important to its future than anyone might imagine.</p>
+            <p>Lastly there are the coders, temporary residents on the roof, whose disappearance triggers a sequence of events that threatens the ecistence of all - and even the long-hidden foundations on which the city rests.</p>
+            <h3>Opening</h3>
+            <p>"Whoever writes the code creates the value.</p>
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
