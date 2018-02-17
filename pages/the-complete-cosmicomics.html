@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Complete Cosmicomics
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="italo-calvino">Italo Calvino</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Italian
+                    </li>
+                    <li>
+                        <b>published</b><br>2009
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The Cosmicomics tell the story of the history of the universe, from the big bang, through millennia and across galaxies. It is witnessed through the eyes of 'cosmic know-it-all' Qfwfq, an exuberant, chameleon-like figure, who takes the shape of a dinosaur, a mollusc, a steamer captain and a moon milk gatherer, among others.</p>
+            <h3>Opening</h3>
+            <p>At one time according to Sir George H. Darwin, the Moon was very close to Earth. Then the tides gradually pushed her far away: the tides that Moon herself causes in the Earth's waters, where the Earth clowly loses energy.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
