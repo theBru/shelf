@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Cuentos breves y extraordinarios
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="jorge-luis-borges">Jorge Luis Borges</a> and <a href="adolfo-bioy-casares">Adolfo Bioy Casares</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Castilian
+                    </li>
+                    <li>
+                        <b>published</b><br>1940
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>En 1940 Jorge Luis Borges, Adolfo Bioy Casares y Silvina Ocampo realizaron la Antologia de la literatura fantastica, que tuvo un indudable impacto en la literatura latinoamericana. Lectores voraces que buscaron siempre el deslumbramiento, el azoro, la sorpresa; los dos primeros continuaron la busqueda de esos momentos magicos, ingeniosos, asombrosos. El resultado fue esta seleccion de pequenas historias extraordinarias, en donde se relatan los sucesos mas increibles, algunos de ellos reales pero que suenan a invencion, otros literarios pero que debieron ser reales y otros mas, apocrifos. En estas paginas encantadoras esta el germen del realismo magico, y las pasiones secretas de sus dos compiladores. El lector no se sorprendera al ver aqui muchos relatos perpetuados en otras antologias o retomados para otras creaciones literarias memorables.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

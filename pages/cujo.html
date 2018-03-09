@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Cujo
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1981
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Outside a peaceful town in central Maine, a monster is waiting. Cujo is a two-hundred-pound Saint Bernard, the best friend Brett Camber has ever had. One day Cujo chases a rabbit into a bolt-hole - a cave inhabited by sick bats.</p>
+            <h3>Opening</h3>
+            <p>not so long ago, a monster came to the small town of Castle Rock, Maine. He killed a waitress named Alma Frechette in 1970; a woman named Pauline Toothaker and a junior high school student named Cheryl Moody in 1971; a pretty girl named Carol Dunbarger in 1974; a teacher named Etta Ringold in the fall of 1975; finally, a grade-schooler name Mary Kate Hendrasen in the early winter of that same year.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

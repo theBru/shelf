@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Death by Black Hole: And Other Cosmic Quandaries
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="neil-degrasse-tyson">Neil deGrasse Tyson</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2007
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The title essay introduces readers to the physics of black holes by explaining the gory details of what would happen to your body if you fell into one. "Holy Wars" examines the needless friction between science and religion in the context of historical conflicts. "The Search for Life in the Universe" explores astral life from the frontiers of astrobiology. And "Hollywood Nights" assails the movie industry's feeble efforts to get its night skies right.</p>
+            <h3>Opening</h3>
+            <p>The success of known physical laws to exlain the world around us has consistently bred some confident  and cocky attituted toward the state of human knowlegde, especially when the holes in our knowledge of objects and phenomenon are perceived to be small and insignificant. Nobel laureates and othe esteemed scientists are not immune from this stance, and in some cases have embarrassed themselves.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

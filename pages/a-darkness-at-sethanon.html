@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        A Darkness at Sethanon [The Riftwar Saga, #3]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="raymond-e-feist">Raymond E. Feist</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1986
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>As Prince Arutha and his companions rally their forces for the final battle with an ancient and mysterious evil, the dread necromancer Marcos the Black has once again unleashed his dark sorcerery. Now the fate of two worlds will be decided in a titanic struggle beneath the walls of Sethanon, as the link between Kelewan and Midkemia is revived.</p>
+            <h3>Opening</h3>
+            <p>The wind came from nowhere.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
