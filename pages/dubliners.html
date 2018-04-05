@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Dubliners
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="james-joyce">James Joyce</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1914
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>This work of art reflects life in Ireland at the turn of the last century, and by rejecting euphemism, reveals to the Irish their unromantic reality. Each of the 15 stories offers glimpses into the lives of ordinary Dubliners, and collectively they paint a portrait of a nation.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

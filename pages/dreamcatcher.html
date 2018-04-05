@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        Dreamcatcher
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2001
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Four childhood friends, united by secrets, are caught in the quarantine zone when something crashes into the remote forests of Maine; and the question becomes who will avoid being eaten alive by alien fungi, torn from the inside by alien ferrets, possessed by alien minds or menaced by a psychotic military commander to whom ruthlessness has become a macho ego trip?</p>
+            <p>The Earth is in peril as well, needless to say, but most of our attention is taken up with a few men caught on the edge, and where the most important thing in the world turns out to be the fact that four small boys saved a fifth from a beating.</p>
+            <h3>Opening</h3>
+            <p>To say that Beaver's marriage didn't work would be like saying that the launch of the Challenger space shuttle went a little bit wrong. Joe 'Beaver' Clarendon and Laurie Sue Kenopensky make it through eight months and then kapow, there goes my baby, somebody help me pick up the fucking pieces.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

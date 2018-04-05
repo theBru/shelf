@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        The Devil and Miss Prym
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="paulo-coelho">Paulo Coelho</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Portuguese
+                    </li>
+                    <li>
+                        <b>published</b><br>2000
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>A stranger arrives at the remote village of Viscos, carrying with him a backpack containing a notebook and eleven gold bars. He comes searching for the answer to a question that torments him: Are human beings, in essence, good or evil? In welcoming the mysterious foreigner, the whole village becomes an accomplice to his sophisticated plot, which will forever mark their lives.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

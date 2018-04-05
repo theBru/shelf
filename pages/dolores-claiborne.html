@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Dolores Claiborne
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1992
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Suspected of killing Vera Donovan, her wealthy employer, Dolores Claiborne tells police the story of her life, harkening back to her disintegrating marriage and the suspicious death of her violent husband, Joe St. George, thirty years earlier. Dolores also tells of Vera's physical and mental decline and of her loyalty to an employer who has become emotionally demanding in recent years.</p>
+            <h3>Opening</h3>
+            <p>In the northwest part of Maine--in the area known as the Lakes District--the small town of Sharbot curves like a crescent around a beautiful body of water called Dark Score Lake. Dark Score is one of the deepest lakes in New England--better than three hundred feet in some places. Some of the locals have been known to claim it is bottomless ... but usually only after a few beers (in Sharbot, half a dozen is considered a few).</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

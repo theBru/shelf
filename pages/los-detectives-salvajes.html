@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        Los detectives salvajes
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="roberto-bolano">Robert Bolaño</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Castilian
+                    </li>
+                    <li>
+                        <b>published</b><br>1998
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Arturo Belano y Ulises Lima, los detectives salvajes, salen a buscar las huellas de Cesárea Tinajero, la misteriosa escritora desaparecida en México en los años posteriores a la revolución, y esa búsqueda -el viaje y sus consecuencias-, se prolonga durante veinte años y se bifurca a través de numerosos personajes y continentes, en una novela donde hay de todo: amores y muertes, asesinatos y fugas turísticas, manicomios y universidades, desapariciones y apariciones. Entre los enigmáticos protagonistas de este libro, destaca un fotógrafo español en el último escalón de la desesperación, un neonazi, un torero mexicano jubilado que vive en el desierto, una estudiante francesa lectora de Sade, una prostituta adolescente en permanente huida, una prócer uruguaya, un abogado gallego herido por la poesía, un editor mexicano perseguido por unos pistoleros a sueldo.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

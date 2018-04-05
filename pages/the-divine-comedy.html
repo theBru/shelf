@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Divine Comedy
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="dante-aligheri">Dante Aligheri</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Italian
+                    </li>
+                    <li>
+                        <b>published</b><br>1308 - 1320
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The Divine Comedy describes Dante's descent into Hell with Virgil as a guide; his ascent of Mount Purgatory and encounter with his dead love, Beatrice; and finally, his arrival in Heaven.</p>
+            <h3>Opening</h3>
+            <p>While halfway through the journey of our life / I found myself lost in a darkened forest / for I had wandered off from the straight path</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

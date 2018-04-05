@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Don Quixote
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="miguel-de-cervantes">Miguel de Cervantes</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Castilian
+                    </li>
+                    <li>
+                        <b>published</b><br>1605-1615
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Don Quixote has become so entranced by reading chivalric romances, that he determines to become a knight-errant himself. In the company of his faithful squire, Sancho Panza, his exploits blossom in all sorts of wonderful ways. While Quixote's fancy often leads him astray – he tilts at windmills, imagining them to be giants – Sancho acquires cunning and a certain sagacity. Sane madman and wise fool, they roam the world together.</p>
+            <h3>Opening</h3>
+            <p>In a certain corner of la Mancha, the name of which I do not choose to remember, there lately lived one of those country gentlemen, who adorned their halls with a rusty lance and worm-eaten target, and ride forth on the skeleton of a horse, to course with a sort of a starved greyhound.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

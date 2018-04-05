@@ -1,0 +1,43 @@
+<section>
+    <h2>
+        The Drawing of the Three [The Dark Tower, #2]
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1987
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>While pursuing his quest for the Dark Tower through a world that is a nightmarishly distorted mirror image of our own, Roland is drawn through a mysterious door that brings him into contemporary America.</p>
+            <p>Here he links forces with the defiant young Eddie Dean, and with the beautiful, brilliant, and brave Odetta Holmes, in a savage struggle against underworld evil and otherworldly enemies.</p>
+            <h3>Opening</h3>
+            <p>Three. This is the number of your fate.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
