@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        Epitaph for a Spy
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="eric-ambler">Eric Ambler</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1938
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Josef Vadassy, a Hungarian refugee and language teacher living in France, is enjoying his first break for years in a small hotel on the Riviera. But when he takes his holiday photographs to be developed at a local chemists, he suddenly finds himself mistaken for a Gestapo agent and a charge of espionage is levelled at him. To prove himself innocent to the French police, he must discover which one of his fellow guests at his pension is the real spy. As he desperately tries to uncover the true culprit's identity, Vadassy must risk his job, his safety and everything he holds dear.</p>
+            <h3>Opening</h3>
+            <p>I arrived in St Gatien from Nice on Tuesday, the fourteenth of August. I was arrested at 11:45 a.m. on Thursday, the sixteenth, by an agent de police and an inspector in plain clothes and taken to the Commisariat.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Fifth Mountain
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="paulo-coelho">Paulo Coelho</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Portuguese
+                    </li>
+                    <li>
+                        <b>published</b><br>1996
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>During the chaos of the ninth century B.C., Jezebel, wife to Israel's ruler, orders the execution of all prophets who refuse to worship the pagan god Baal. The young prophet Elijah, commanded by an angel of God to flee Israel, seeks safety in the land of Zarephath, where he unexpectedly finds true love with a young widow. But this new-found rapture is to be cut short, and Elijah sees all of his hopes and dreams irrevocably erased.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

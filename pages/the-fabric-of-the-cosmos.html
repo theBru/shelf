@@ -1,0 +1,42 @@
+<section>
+    <h2>
+        The Fabric of the Cosmos: Space, Time, and the Texture of Reality
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="brian-greene">Brian Greene</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>2004
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Space and time form the very fabric of the cosmos. Yet they remain among the most mysterious of concepts. Is space an entity? Why does time have a direction? Could the universe exist without space and time? Can we travel to the past? Greene has set himself a daunting task: to explain non-intuitive, mathematical concepts like String Theory, the Heisenberg Uncertainty Principle, and Inflationary Cosmology with analogies drawn from common experience. From Newton’s unchanging realm in which space and time are absolute, to Einstein’s fluid conception of spacetime, to quantum mechanics’ entangled arena where vastly distant objects can instantaneously coordinate their behavior, Greene takes us all, regardless of our scientific backgrounds, on an irresistible and revelatory journey to the new layers of reality that modern physics has discovered lying just beneath the surface of our everyday world.</p>
+            <h3>Opening</h3>
+            <p>None of the books in my father's dusty old bookcase were forbidden. Yet while I was growing up, I never saw anyone else take one down. MOst were massive tomes--a comprehensive history of civilisation, matching volumes of the great works of western literature, numerous others I can no longer recall--that seemed almost fused to shelves that bowed slightly from decades of steasdfast support. But my up on the highest shelf was a thin little text that, every now and then, woud catch my eye because it seemed so out of place, like Gulliver among the Brobdingnagians. In hindsight, I'm not quite sure why I waited so long before taking a look. Perhaps, as the years went by, the books seemed less like material you read and more like family heirlooms you admire from afar. Ultimately, such reverance gave way to teenage brashness. I reached up for the little text, dusted it off, and opened page one. The first few lines were, to say the least, startling.</p>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
