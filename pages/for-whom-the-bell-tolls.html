@@ -1,0 +1,44 @@
+<section>
+    <h2>
+        For Whom the Bell Tolls
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="ermest-hemingway">Ernest Hemingway</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1940
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>The story of Robert Jordan, a young American in the International Brigades attached to an antifascist guerilla unit in the mountains of Spain, it tells of loyalty and courage, love and defeat, and the tragic death of an ideal.</p>
+            <h3>Opening</h3>
+            <p>He lay flat on the brown, pine-needled floor of the forest, his chin on his folded arms, and high overhead the wind bewl in the tops of the pine trees. The mountainside sloped gently where he lay; but below it was steep and he could see the dark of trhe oiled road winding through the pass. There was a stream alongside the road and far down the pass he saw a mill beside the stream and the falling water of the dam, white in the summer sunlight.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

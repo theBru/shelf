@@ -1,0 +1,47 @@
+<section>
+    <h2>
+        Firestarter
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="stephen-king">Stephen King</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>English
+                    </li>
+                    <li>
+                        <b>published</b><br>1980
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>First, a man and a woman are subjects of a top-secret government experiment designed to produce extraordinary psychic powers.</p>
+            <p>Then, they are married and have a child. A daughter.</p>
+            <p>Early on the daughter shows signs of a wild and horrifying force growing within her. Desperately, her parents try to train her to keep that force in check, to "act normal."</p>
+            <p>Now the government wants its brainchild back - for its own insane ends.</p>
+            <h3>Opening</h3>
+            <p>"Daddy, I'm tired," the little girl in red pants and the green blouse said fretfully. "Can't we stop?"</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>

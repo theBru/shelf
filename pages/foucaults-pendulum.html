@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        Foucault's Pendulum
+    </h2>
+    <div class="book-main">
+        <div class="book-section meta">
+            <div class="meta-card">
+                <ul>
+                    <li>
+                        <b>author</b><br>
+                        <a href="umberto-eco">Umberto Eco</a>
+                    </li>
+                    <li>
+                        <b>original language</b><br>Italian
+                    </li>
+                    <li>
+                        <b>published</b><br>1988
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="book-section main">
+            <h3>Back cover</h3>
+            <p>Bored with their work, and after reading too many manuscripts about occult conspiracy theories, three vanity publisher employees (Belbo, Diotallevi and Casaubon) invent their own conspiracy for fun. They call this satirical intellectual game "The Plan," a hoax that connects the medieval Knights Templar with other occult groups from ancient to modern times. This produces a map indicating the geographical point from which all the powers of the earth can be controlled—a point located in Paris, France, at Foucault’s Pendulum. But in a fateful turn the joke becomes all too real.</p>
+            <p>The three become increasingly obsessed with The Plan, and sometimes forget that it's just a game. Worse still, other conspiracy theorists learn about The Plan, and take it seriously. Belbo finds himself the target of a real secret society that believes he possesses the key to the lost treasure of the Knights Templar.</p>
+            <h3>Opening</h3>
+            <p>That was when I saw the Pendulum.</p>
+            
+            
+        </div>
+
+    </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('article a').click(function () {
+            var pageToLoad = $(this).attr('href');
+            $('article').load('pages/' + pageToLoad + '.html');
+            return false;
+        });
+    });
+
+</script>
